@@ -1,3 +1,5 @@
+<?php require_once 'components/info.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

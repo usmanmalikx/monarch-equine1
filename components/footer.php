@@ -1,3 +1,4 @@
+
         <!-- main-footer -->
         <footer class="main-footer bg-color-1">
             <div class="footer-top pt_85 pb_100">
@@ -30,9 +31,9 @@
                                         <p>Tincidunt neque pretium lectus donec risus. Mauris mi tempor nunc orc leo consequat vitae erat gravida lobortis nec et sagittis.</p>
                                     </div>
                                     <ul class="social-links clearfix">
-                                        <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                        <?php foreach ($site_social_links as $social_link) : ?>
+                                            <li><a href="<?= site_esc($social_link['url']); ?>"><i class="<?= site_esc($social_link['icon']); ?>"></i></a></li>
+                                        <?php endforeach; ?>
                                     </ul>
                                 </div>
                             </div>
@@ -44,9 +45,9 @@
                                 </div>
                                 <div class="widget-content">
                                     <ul class="info-list clearfix">
-                                        <li><span>Address: </span>New Hyde Park, NY 11040</li>
-                                        <li><span>Email: </span><a href="mailto:example@info.com">example@info.com</a></li>
-                                        <li><span>Call: </span><a href="tel:912136660027">(+91) 213 666 0027</a></li>
+                                        <li><span>Address: </span><?= site_esc($site_address); ?></li>
+                                        <li><span>Email: </span><a href="mailto:<?= site_esc($site_email); ?>"><?= site_esc($site_email); ?></a></li>
+                                        <li><span>Call: </span><a href="tel:<?= site_esc($site_phone_link); ?>"><?= site_esc($site_phone); ?></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -63,5 +64,4 @@
             </div>
         </footer>
         <!-- main-footer end -->
-
 

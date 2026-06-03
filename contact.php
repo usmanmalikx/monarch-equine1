@@ -1,3 +1,5 @@
+<?php require_once 'components/info.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,36 +71,27 @@
                     <div class="col-lg-4 col-md-12 col-sm-12 info-column">
                         <div class="info-inner">
                             <div class="text">
-                                <h2>Ticrou Info</h2>
+                                <h2><?= site_esc($site_name); ?> Info</h2>
                                 <p>Mauris magna sit elementum facilis lacusacphar.</p>
                             </div>
                             <ul class="info-list clearfix">
                                 <li>
                                     <i class="icon-39"></i>
-                                    <h5>Restaurant</h5>
-                                    <p>New Hyde Park, NY 11040</p>
+                                    <p><?= site_esc($site_address); ?></p>
                                 </li>
                                 <li>
                                     <i class="icon-40"></i>
-                                    <h5>Phone No:</h5>
-                                    <p><a href="tel:913336660021">(+91) 333 666 0021</a></p>
+                                    <p><a href="tel:<?= site_esc($site_phone_link); ?>"><?= site_esc($site_phone); ?></a></p>
                                 </li>
                                 <li>
                                     <i class="icon-1"></i>
-                                    <h5>Email:</h5>
-                                    <p><a href="mailto:example@info.com">example@info.com</a></p>
-                                </li>
-                                <li>
-                                    <i class="icon-2"></i>
-                                    <h5>Opening Hours:</h5>
-                                    <p>Mon - Fri:  8:00AM - 6:00PM</p>
+                                    <p><a href="mailto:<?= site_esc($site_email); ?>"><?= site_esc($site_email); ?></a></p>
                                 </li>
                             </ul>
                             <ul class="social-links clearfix">
-                                <li><a href="contact.html"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="contact.html"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="contact.html"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="contact.html"><i class="fab fa-instagram"></i></a></li>
+                                <?php foreach ($site_social_links as $social_link) : ?>
+                                    <li><a href="<?= site_esc($social_link['url']); ?>"><i class="<?= site_esc($social_link['icon']); ?>"></i></a></li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                     </div>

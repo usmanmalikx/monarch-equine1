@@ -43,18 +43,18 @@
                     <div class="top-inner">
                         <div class="left-column">
                             <ul class="info clearfix">
-                                <li><i class="icon-1"></i><a href="mailto:info@example.com">info@example.com</a></li>
-                                <li><i class="icon-2"></i>Open Hours: Mon - Fri 8.00 am - 6.00 pm</li>
+                                <li><i class="icon-1"></i><a href="mailto:<?= site_esc($site_email); ?>"><?= site_esc($site_email); ?></a></li>
+                                <li><i class="icon-2"></i><?= site_esc($site_header_hours); ?></li>
                             </ul>
                             <ul class="social-links clearfix">
-                                <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                <?php foreach ($site_social_links as $social_link) : ?>
+                                    <li><a href="<?= site_esc($social_link['url']); ?>"><i class="<?= site_esc($social_link['icon']); ?>"></i></a></li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                         <div class="right-column">
                             <div class="btn-box">
-                                <a href="index.html">Book A Table</a>
+                                <a href="index.html">Schedule a Tour</a>
                             </div>
                         </div>
                     </div>
@@ -120,18 +120,16 @@
                 <div class="contact-info">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li>Chicago 12, Melborne City, USA</li>
-                        <li><a href="tel:+8801682648101">+88 01682648101</a></li>
-                        <li><a href="mailto:info@example.com">info@example.com</a></li>
+                        <li><?= site_esc($site_address); ?></li>
+                        <li><a href="tel:<?= site_esc($site_phone_link); ?>"><?= site_esc($site_phone); ?></a></li>
+                        <li><a href="mailto:<?= site_esc($site_email); ?>"><?= site_esc($site_email); ?></a></li>
                     </ul>
                 </div>
                 <div class="social-links">
                     <ul class="clearfix">
-                        <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                        <?php foreach ($site_social_links as $social_link) : ?>
+                            <li><a href="<?= site_esc($social_link['url']); ?>"><span class="<?= site_esc($social_link['icon']); ?>"></span></a></li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </nav>
