@@ -50,10 +50,9 @@
             <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
             <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
                 <div class="slide-item p_relative">
-                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/banner-1.jpg)"></div>
+                    <div class="image-layer p_absolute" style="background-image:url(images/slider-1.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
-                            <span class="animation_text_word special-text p_relative d_block"></span>
                             <h2 class="p_relative d_block">We Serve Quality Food</h2>
                             <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
                             <div class="btn-box">
@@ -63,10 +62,9 @@
                     </div>
                 </div>
                 <div class="slide-item p_relative">
-                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/banner-2.jpg)"></div>
+                    <div class="image-layer p_absolute" style="background-image:url(images/slider-2.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
-                            <span class="animation_text_word special-text p_relative d_block"></span>
                             <h2 class="p_relative d_block">We Serve Quality Food</h2>
                             <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
                             <div class="btn-box">
@@ -76,10 +74,9 @@
                     </div>
                 </div>
                 <div class="slide-item p_relative">
-                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/banner-3.jpg)"></div>
+                    <div class="image-layer p_absolute" style="background-image:url(images/slider-3.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
-                            <span class="animation_text_word special-text p_relative d_block"></span>
                             <h2 class="p_relative d_block">We Serve Quality Food</h2>
                             <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
                             <div class="btn-box">
@@ -97,9 +94,9 @@
         <section class="about-section sec-pad">
             <div class="image_block_one">
                 <div class="image-box">
-                    <figure class="image-1 wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="assets/images/resource/about-1.png" alt=""></figure>
-                    <figure class="image-2"><img src="assets/images/resource/about-2.png" alt=""></figure>
-                    <figure class="vector-1"><img src="assets/images/icons/vector-1.png" alt=""></figure>
+                    <figure class="image-1 wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="images/section-2.png" alt=""></figure>
+                    <figure class="image-2"><img src="images/section-2-2.png" alt=""></figure>
+                    <figure class="vector-1"><img src="images/section-2-1.png" alt=""></figure>
                     <div class="shape">
                         <div class="shape-1"></div>
                         <div class="shape-2" style="background-image: url(assets/images/shape/shape-2.png);"></div>
@@ -131,206 +128,83 @@
         <!-- about-section end -->
 
 
-        <!-- menu-section -->
-        <section class="menu-section bg-color-1">
-            <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
-                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-6.png);"></div>
-                <div class="pattern-3" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+        <section class="cta-section centred bg-color-1 sec-pad">
+            <div class="shape">
+                <div class="shape-1 p_absolute l_0 t_0" style="background-image: url(assets/images/shape/shape-10.png);"></div>
+                <div class="shape-2 p_absolute l_60 t_60" style="background-image: url(assets/images/shape/shape-11.png);"></div>
+                <div class="shape-3 p_absolute" style="background-image: url(assets/images/shape/shape-12.png);"></div>
+                <div class="shape-4 p_absolute" style="background-image: url(assets/images/shape/shape-13.png);"></div>
             </div>
             <div class="auto-container">
-                <div class="inner-container">
-                    <div class="sec-title centred mb_100">
-                        <span class="sub-title">Weekly Specials</span>
-                        <h2>Menu Of The Day</h2>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-6 col-md-6 col-sm-12 menu-block">
-                            <div class="menu-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <div class="shape">
-                                        <div class="shape-1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                                        <div class="shape-2" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-                                    </div>
-                                    <div class="inner">
-                                        <div class="single-item">
-                                            <div class="upper-box">
-                                                <h4><a href="shop-details.html">American Combo Menu</a></h4>
-                                                <span class="price">$12</span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Lorem ipsum dolor sit amet consectur adipiscing purus egestas diam sit vitae egestas suspendisse amet ultricies.</p>
-                                            </div>
-                                        </div>
-                                        <div class="single-item">
-                                            <div class="upper-box">
-                                                <h4><a href="shop-details.html">Strawberry Jam French Toast </a></h4>
-                                                <span class="price">$15</span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Lorem ipsum dolor sit amet consectur adipiscing purus egestas diam sit vitae egestas suspendisse amet ultricies.</p>
-                                            </div>
-                                        </div>
-                                        <div class="single-item">
-                                            <div class="upper-box">
-                                                <h4><a href="shop-details.html">Optic Big Breakfast Combo Menu</a></h4>
-                                                <span class="price">$20</span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Lorem ipsum dolor sit amet consectur adipiscing purus egestas diam sit vitae egestas suspendisse amet ultricies.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 menu-block">
-                            <div class="menu-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <div class="inner-box">
-                                    <div class="shape">
-                                        <div class="shape-1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                                        <div class="shape-2" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-                                    </div>
-                                    <div class="inner">
-                                        <div class="single-item">
-                                            <div class="upper-box">
-                                                <h4><a href="shop-details.html">American Combo Menu</a></h4>
-                                                <span class="price">$12</span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Lorem ipsum dolor sit amet consectur adipiscing purus egestas diam sit vitae egestas suspendisse amet ultricies.</p>
-                                            </div>
-                                        </div>
-                                        <div class="single-item">
-                                            <div class="upper-box">
-                                                <h4><a href="shop-details.html">Strawberry Jam French Toast </a></h4>
-                                                <span class="price">$15</span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Lorem ipsum dolor sit amet consectur adipiscing purus egestas diam sit vitae egestas suspendisse amet ultricies.</p>
-                                            </div>
-                                        </div>
-                                        <div class="single-item">
-                                            <div class="upper-box">
-                                                <h4><a href="shop-details.html">Optic Big Breakfast Combo Menu</a></h4>
-                                                <span class="price">$20</span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Lorem ipsum dolor sit amet consectur adipiscing purus egestas diam sit vitae egestas suspendisse amet ultricies.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="more-btn mt_110 centred">
-                        <a href="index.html" class="theme-btn-one">Download PDF</a>
-                    </div>
+                <div class="sec-title light">
+                    <span class="sub-title">Get 25% Discount</span>
+                    <h2>Explore Special Taste &amp; The <br>Best Quality</h2>
+                    <a href="index.html" class="theme-btn-one mt_45">Make a Reservation</a>
                 </div>
             </div>
         </section>
-        <!-- menu-section end -->
 
 
-        <!-- shop-section -->
-        <section class="shop-section">
-            <div class="bg-layer parallax-bg" data-parallax='{"y": 100}' style="background-image: url(assets/images/background/shop-bg.jpg);"></div>
+        <section class="deal-section sec-pad centred">
             <div class="auto-container">
-                <div class="sec-title mb_50">
-                    <span class="sub-title">Our Shop</span>
-                    <h2>Our All Delicious & Tasty <br />Product</h2>
+                <div class="sec-title mb_45">
+                    <span class="sub-title">Event Types</span>
+                    <h2>Deal Of The Day</h2>
                 </div>
-                <div class="four-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
-                    <div class="shop-block-one">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/shop/shop-1.png" alt=""></figure>
-                                <div class="btn-box">
-                                    <a href="shop-details.html" class="theme-btn-one">Add To Cart</a>
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
+                        <div class="deal-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="assets/images/resource/deal-1.jpg" alt=""></figure>
                                 </div>
-                            </div>
-                            <div class="lower-content">
-                                <h5><a href="shop-details.html">Strawberry Jam Toast</a></h5>
-                                <ul class="rating clearfix">
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                </ul>
-                                <span class="price">$15:00</span>
+                                <div class="text">
+                                    <h3><a href="index-3.html">Breakfast</a></h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="shop-block-one">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/shop/shop-2.png" alt=""></figure>
-                                <div class="btn-box">
-                                    <a href="shop-details.html" class="theme-btn-one">Add To Cart</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
+                        <div class="deal-block-one wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="assets/images/resource/deal-2.jpg" alt=""></figure>
                                 </div>
-                            </div>
-                            <div class="lower-content">
-                                <h5><a href="shop-details.html">Penne pasta with meatball</a></h5>
-                                <ul class="rating clearfix">
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                </ul>
-                                <span class="price">$17:00</span>
+                                <div class="text">
+                                    <h3><a href="index-3.html">Launch</a></h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="shop-block-one">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/shop/shop-3.png" alt=""></figure>
-                                <div class="btn-box">
-                                    <a href="shop-details.html" class="theme-btn-one">Add To Cart</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
+                        <div class="deal-block-one wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="assets/images/resource/deal-3.jpg" alt=""></figure>
+                                    <span>$18</span>
                                 </div>
-                            </div>
-                            <div class="lower-content">
-                                <h5><a href="shop-details.html">Fried eggs sandwiches</a></h5>
-                                <ul class="rating clearfix">
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                </ul>
-                                <span class="price">$20:00</span>
+                                <div class="text">
+                                    <h3><a href="index-3.html">Dinner</a></h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="shop-block-one">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/shop/shop-4.png" alt=""></figure>
-                                <div class="btn-box">
-                                    <a href="shop-details.html" class="theme-btn-one">Add To Cart</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
+                        <div class="deal-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="assets/images/resource/deal-4.jpg" alt=""></figure>
+                                    <span>$15</span>
                                 </div>
-                            </div>
-                            <div class="lower-content">
-                                <h5><a href="shop-details.html">Chicken & vegetable fry</a></h5>
-                                <ul class="rating clearfix">
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                    <li><i class="icon-7"></i></li>
-                                </ul>
-                                <span class="price">$15:00</span>
+                                <div class="text">
+                                    <h3><a href="index-3.html">Dessert</a></h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- shop-section end -->
-
 
         <!-- gallery-section -->
         <section class="gallery-section pt_65">
@@ -378,7 +252,7 @@
                 </div>
                 <div class="promotion-block-one">
                     <div class="inner-box">
-                        <div class="shape" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape" style="background-image: url(images/shape-2.png);"></div>
                         <div class="row clearfix">
                             <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                                 <div class="image-box">
@@ -423,106 +297,21 @@
         <!-- promotion-section end -->
 
 
-        <!-- testimonial-section -->
-        <section class="testimonial-section sec-pad bg-color-2">
-            <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-8.png);"></div>
-                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-            </div>
-            <div class="image-box">
-                <figure class="image-1"><img src="assets/images/resource/men-1.png" alt=""></figure>
-                <figure class="image-2"><img src="assets/images/resource/image-1.png" alt=""></figure>
-                <figure class="image-3"><img src="assets/images/resource/image-2.png" alt=""></figure>
-            </div>
+
+
+<section class="video-style-two centred">
             <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-xl-6 col-lg-12 col-md-12 offset-xl-6 content-column">
-                        <div class="content-box">
-                            <div class="sec-title mb_45">
-                                <span class="sub-title">Testimonials</span>
-                                <h2>What Clients Say <br />About <span>Ticrou</span></h2>
-                            </div>
-                            <div class="single-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
-                                <div class="testimonial-block-one">
-                                    <div class="inner-box">
-                                        <div class="icon-box"><i class="icon-9"></i></div>
-                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sit purus tempor dui. Pharetra consequat nibh elit urna interdum. Vivera quam a arcu duis Quis lectus donec nulladui sit in viverra tempus risus.”</p>
-                                        <div class="author-box">
-                                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt=""></figure>
-                                            <ul class="rating clearfix">
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="far fa-star"></i></li>
-                                            </ul>
-                                            <h4>Sandra Bullock</h4>
-                                            <span class="designation">Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-block-one">
-                                    <div class="inner-box">
-                                        <div class="icon-box"><i class="icon-9"></i></div>
-                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sit purus tempor dui. Pharetra consequat nibh elit urna interdum. Vivera quam a arcu duis Quis lectus donec nulladui sit in viverra tempus risus.”</p>
-                                        <div class="author-box">
-                                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt=""></figure>
-                                            <ul class="rating clearfix">
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="far fa-star"></i></li>
-                                            </ul>
-                                            <h4>Sandra Bullock</h4>
-                                            <span class="designation">Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial-block-one">
-                                    <div class="inner-box">
-                                        <div class="icon-box"><i class="icon-9"></i></div>
-                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sit purus tempor dui. Pharetra consequat nibh elit urna interdum. Vivera quam a arcu duis Quis lectus donec nulladui sit in viverra tempus risus.”</p>
-                                        <div class="author-box">
-                                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt=""></figure>
-                                            <ul class="rating clearfix">
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="far fa-star"></i></li>
-                                            </ul>
-                                            <h4>Sandra Bullock</h4>
-                                            <span class="designation">Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="inner-box" style="background-image: url(assets/images/background/video-bg-2.jpg);">
+                    <div class="sec-title light mb_100">
+                        <span class="sub-title">Watch Video</span>
+                        <h2>Our Special &amp; Best Quality <br>Cooking</h2>
+                    </div>
+                    <div class="video-btn">
+                        <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="icon-14"></i></a>
                     </div>
                 </div>
             </div>
-        </section> 
-        <!-- testimonial-section -->
-
-
-        <!-- cta-section -->
-        <section class="cta-section centred bg-color-1 sec-pad">
-            <div class="shape">
-                <div class="shape-1 p_absolute l_0 t_0" style="background-image: url(assets/images/shape/shape-10.png);"></div>
-                <div class="shape-2 p_absolute l_60 t_60" style="background-image: url(assets/images/shape/shape-11.png);"></div>
-                <div class="shape-3 p_absolute" style="background-image: url(assets/images/shape/shape-12.png);"></div>
-                <div class="shape-4 p_absolute" style="background-image: url(assets/images/shape/shape-13.png);"></div>
-            </div>
-            <div class="auto-container">
-                <div class="sec-title light">
-                    <span class="sub-title">Get 25% Discount</span>
-                    <h2>Explore Special Taste & The <br />Best Quality</h2>
-                    <a href="index.html" class="theme-btn-one mt_45">Make a Reservation</a>
-                </div>
-            </div>
         </section>
-        <!-- cta-section end -->
 
 
         <!-- news-section -->
@@ -702,7 +491,6 @@
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/parallax-scroll.js"></script>
-    <script src="assets/js/text_animation.js"></script>
     <script src="assets/js/text_plugins.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
 

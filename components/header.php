@@ -1,4 +1,4 @@
-<!-- preloader -->
+<!-- preloader 
         <div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close">x</div>
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <!-- preloader end -->
+         preloader end -->
 
 
         <!-- main header -->
@@ -81,6 +81,7 @@
                                         <li><a href="events.php">Event Types</a></li>
                                         <li><a href="venue-features.php">Venue Features</a></li>
                                         <li><a href="services.php">Services</a></li>
+                                        <li><a href="gallery.php">Gallery</a></li>
                                         <li><a href="about.php">About Us</a></li>
                                         <li><a href="contact.php">Contact</a></li> 
                                     </ul>

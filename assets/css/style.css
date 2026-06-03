@@ -589,7 +589,7 @@ img {
 }
 
 .sec-title.light h2{
-  color: #fff;
+  color: #222;
 }
 
 
@@ -1916,7 +1916,7 @@ div#mCSB_1_container{
 
 .image_block_one .image-box .vector-1{
   position: absolute;
-  top: 260px;
+  top: -50px;
   left: 0px;
 }
 
