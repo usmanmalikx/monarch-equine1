@@ -25,7 +25,7 @@
                                     <div class="shape-2" style="background-image: url(assets/images/shape/shape-20.png);"></div>
                                 </div>
                                 <div class="widget-content">
-                                    <figure class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt=""></a></figure>
+                                    <figure class="footer-logo"><a href="index.html"><img src="images/logo-full.png" alt=""></a></figure>
                                     <div class="text">
                                         <p>Tincidunt neque pretium lectus donec risus. Mauris mi tempor nunc orc leo consequat vitae erat gravida lobortis nec et sagittis.</p>
                                     </div>
@@ -54,9 +54,9 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom centred">
+            <div class="footer-bottom centred dark">
                 <div class="auto-container">
-                    <div class="copyright">
+                    <div class="copyright dark">
                         <p>Copyright 2026 by <a href="index.html">ticrou</a> All Right Reserved.</p>
                     </div>
                 </div>
@@ -65,16 +65,3 @@
         <!-- main-footer end -->
 
 
-
-        <!--Scroll to top-->
-        <div class="scroll-to-top">
-            <div>
-                <div class="scroll-top-inner">
-                    <div class="scroll-bar">
-                        <div class="bar-inner"></div>
-                    </div>
-                    <div class="scroll-bar-text">Go To Top</div>
-                </div>
-            </div>
-        </div>
-        <!-- Scroll to top end -->

@@ -138,7 +138,7 @@
             </div>
             <div class="auto-container">
                 <div class="inner-container">
-                    <div class="sec-title light centred mb_100">
+                    <div class="sec-title centred mb_100">
                         <span class="sub-title">Weekly Specials</span>
                         <h2>Menu Of The Day</h2>
                     </div>

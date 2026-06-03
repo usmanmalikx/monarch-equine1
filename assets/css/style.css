@@ -671,7 +671,7 @@ img {
 .header-top{
   position: relative;
   width: 100%;
-  background: #212226;
+  background: #f1f1f1;
 }
 
 .header-top .top-inner{
@@ -693,7 +693,7 @@ img {
   float: left;
   font-size: 16px;
   line-height: 24px;
-  color: #BCBDBE;
+  color: #444;
   font-weight: 500;
   margin-right: 25px;
   padding-left: 27px;
@@ -712,7 +712,7 @@ img {
 
 .header-top .info li a{
   display: inline-block;
-  color: #BCBDBE;
+  color: #444;
 }
 
 .header-top .info li a:hover{
@@ -1944,7 +1944,7 @@ div#mCSB_1_container{
 }
 
 .bg-color-1{
-  background: #212226;
+  background: #f1f1f1;
 }
 
 
@@ -2913,7 +2913,7 @@ div#mCSB_1_container{
 .footer-top .widget-title h3{
   font-size: 24px;
   line-height: 28px;
-  color: #fff;
+  color: #444;
 }
 
 .footer-top .schedule-widget .widget-content .list li{
@@ -2921,7 +2921,7 @@ div#mCSB_1_container{
   display: block;
   font-size: 16px;
   line-height: 36px;
-  color: #fff;
+  color: #444;
 }
 
 .footer-top .schedule-widget .widget-content .list li span{
@@ -2949,7 +2949,7 @@ div#mCSB_1_container{
 .footer-top .logo-widget .text p{
   font-size: 16px;
   line-height: 28px;
-  color: #fff;
+  color: #444;
 }
 
 .footer-top .logo-widget .social-links li{
@@ -2965,9 +2965,9 @@ div#mCSB_1_container{
   height: 50px;
   line-height: 50px;
   font-size: 16px;
-  background: rgba(255, 225, 255, 0.20);
+  background: white;
   text-align: center;
-  color: #fff;
+  color: var(--brand-color);
   border-radius: 50%;
 }
 
@@ -2998,7 +2998,7 @@ div#mCSB_1_container{
   display: block;
   font-size: 16px;
   line-height: 36px;
-  color: #fff;
+  color: #444;
 }
 
 .footer-top .contact-widget .info-list li span{
@@ -3006,7 +3006,7 @@ div#mCSB_1_container{
 }
 
 .footer-top .contact-widget .info-list li a{
-  color: #fff;
+  color: #444;
 }
 
 .footer-top .contact-widget .info-list li a:hover{
@@ -3021,11 +3021,11 @@ div#mCSB_1_container{
 .footer-bottom p{
   font-size: 16px;
   line-height: 36px;
-  color: #ffffff;
+  color: #444;
 }
 
 .footer-bottom p a{
-  color: #ffffff;
+  color: #444;
 }
 
 .footer-bottom p a:hover{

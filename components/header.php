@@ -4,25 +4,28 @@
                 <div class="preloader-close">x</div>
                 <div id="handle-preloader" class="handle-preloader">
                     <div class="animation-preloader">
-                        <div class="spinner"></div>
+                        <img src="images/logo-horse.png" alt=""></a>
                         <div class="txt-loading">
-                            <span data-text-preloader="t" class="letters-loading">
-                                t
+                            <span data-text-preloader="M" class="letters-loading">
+                                M
                             </span>
-                            <span data-text-preloader="i" class="letters-loading">
-                                i
+                            <span data-text-preloader="O" class="letters-loading">
+                                O
                             </span>
-                            <span data-text-preloader="c" class="letters-loading">
-                                c
+                            <span data-text-preloader="N" class="letters-loading">
+                                N
                             </span>
-                            <span data-text-preloader="r" class="letters-loading">
-                                r
+                            <span data-text-preloader="A" class="letters-loading">
+                                A
                             </span>
-                            <span data-text-preloader="o" class="letters-loading">
-                                o
+                            <span data-text-preloader="R" class="letters-loading">
+                                R
                             </span>
-                            <span data-text-preloader="u" class="letters-loading">
-                                u
+                            <span data-text-preloader="C" class="letters-loading">
+                                C
+                            </span>
+                            <span data-text-preloader="H" class="letters-loading">
+                                H
                             </span>
                         </div>
                     </div>  
@@ -62,7 +65,7 @@
                 <div class="auto-container">
                     <div class="outer-box">
                         <div class="logo-box">
-                            <figure class="logo"><a href="index.php"><img src="assets/images/logo.png" alt=""></a></figure>
+                            <figure class="logo"><a href="index.php"><img src="images/logo.png" alt=""></a></figure>
                         </div>
                         <div class="menu-area clearfix">
                             <!--Mobile Navigation Toggler-->
@@ -93,7 +96,7 @@
                 <div class="auto-container">
                     <div class="outer-box">
                         <div class="logo-box">
-                            <figure class="logo"><a href="index.php"><img src="assets/images/logo.png" alt=""></a></figure>
+                            <figure class="logo"><a href="index.php"><img src="images/logo.png" alt=""></a></figure>
                         </div>
                         <div class="menu-area clearfix">
                             <nav class="main-menu clearfix">
@@ -112,7 +115,7 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.php"><img src="assets/images/logo-2.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.php"><img src="images/logo-2.png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
                 <div class="contact-info">
                     <h4>Contact Info</h4>
