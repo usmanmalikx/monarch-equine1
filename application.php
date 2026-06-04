@@ -1,17 +1,4 @@
-<?php
-require_once 'components/info.php';
-
-$gallery_dir = __DIR__ . '/images/gallery';
-$allowed_ext = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
-$gallery_images = [];
-
-if (is_dir($gallery_dir)) {
-    $gallery_images = array_values(array_filter(
-        scandir($gallery_dir),
-        fn($file) => in_array(strtolower(pathinfo($file, PATHINFO_EXTENSION)), $allowed_ext)
-    ));
-}
-?>
+<?php require_once 'components/info.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +7,7 @@ if (is_dir($gallery_dir)) {
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>Gallery - <?= site_esc($site_name); ?></title>
+<title>Applicagtion - <?= site_esc($site_name); ?></title>
 
 <!-- Fav Icon -->
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -54,6 +41,8 @@ if (is_dir($gallery_dir)) {
     <div class="boxed_wrapper">
 
 
+        
+
 
         <?php include 'components/header.php'; ?>
 
@@ -64,39 +53,12 @@ if (is_dir($gallery_dir)) {
             <div class="bg-layer" style="background-image: url(assets/images/background/page-title.jpg);"></div>
             <div class="auto-container">
                 <div class="content-box">
-                    <h2>Gallery </h2>
+                    <h2>Application</h2>
                 </div>
             </div>
         </section>
         <!-- End Page Title -->
 
-
-        <!-- gallery-style-three -->
-        <section class="gallery-style-three">
-            <div class="auto-container">
-                <div class="sortable-masonry">
-                    <div class="items-container row clearfix">
-                        <?php foreach ($gallery_images as $image): ?>
-                            <?php
-                            $src = 'images/gallery/' . $image;
-                            $alt = pathinfo($image, PATHINFO_FILENAME);
-                            ?>
-                            <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all">
-                                <div class="gallery-block-two">
-                                    <div class="inner-box">
-                                        <figure class="image-box"><img src="<?= site_esc($src); ?>" alt="<?= site_esc($alt); ?>"></figure>
-                                        <div class="content-box">
-                                            <div class="view-btn"><a href="<?= site_esc($src); ?>" class="lightbox-image" data-fancybox="gallery"><i class="icon-16"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- gallery-style-three end -->
 
 
     <?php include 'components/footer.php'; ?>

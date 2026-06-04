@@ -54,7 +54,7 @@
                         </div>
                         <div class="right-column">
                             <div class="btn-box">
-                                <a href="index.html">Schedule a Tour</a>
+                                <a href="application.php">Schedule a Tour</a>
                             </div>
                         </div>
                     </div>

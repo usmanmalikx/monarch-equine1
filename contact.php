@@ -123,22 +123,18 @@
 
         <!-- google-map-section -->
         <section class="google-map-section">
-            <div class="map-inner p_relative d_block">
-                <div 
-                    class="google-map" 
-                    id="contact-google-map" 
-                    data-map-lat="40.712776" 
-                    data-map-lng="-74.005974" 
-                    data-icon-path="assets/images/icons/map-marker.png"  
-                    data-map-title="Brooklyn, New York, United Kingdom" 
-                    data-map-zoom="12" 
-                    data-markers='{
-                        "marker-1": [40.712776, -74.005974, "<h4>Branch Office</h4><p>77/99 New York</p>","assets/images/icons/map-marker.png"]
-                    }'>
-
-                </div>
-            </div>
-        </section>
+    <div class="map-inner p_relative d_block">
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.118591234379!2d-118.99922992427419!3d34.271027973075476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e8344d0a8fd35b%3A0x5f708db9680c20ff!2s4651%20Donlon%20Rd%2C%20Somis%2C%20CA%2093066!5e0!3m2!1sen!2sus!4v1780602453259!5m2!1sen!2sus" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>    
+</div>
+</section>
         <!-- google-map-section end -->
 
 

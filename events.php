@@ -74,7 +74,7 @@
                                             </figure>
                                         </div>
                                         <div class="lower-content">
-                                            <h3><a href="<?= site_esc($event['link'] ?? '#'); ?>"><?= site_esc($event['title'] ?? 'Event'); ?></a></h3>
+                                            <h3><?= site_esc($event['title'] ?? 'Event'); ?></h3>
                                         </div>
                                     </div>
                                 </div>

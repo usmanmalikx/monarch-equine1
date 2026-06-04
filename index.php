@@ -205,7 +205,7 @@ $gallery_images = array_values(array_filter(
             <span class="sub-title">Event Types</span>
         </div>
         <div class="row clearfix">
-            <?php foreach ($events as $index => $event): ?>
+            <?php foreach (array_slice($events, 0, 4) as $index => $event): ?>
                 <?php $delay = $index * 200; ?>
                 <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
                     <div class="deal-block-one wow fadeInUp animated"
@@ -225,6 +225,10 @@ $gallery_images = array_values(array_filter(
                     </div>
                 </div>
             <?php endforeach; ?>
+
+            <div class="col-12 btn-box text-center mt_120">
+                <a href="events.php" class="theme-btn-one">See More</a>
+            </div>
         </div>
     </div>
 </section>
@@ -307,8 +311,7 @@ $gallery_images = array_values(array_filter(
             </div>
             <div class="auto-container">
                 <div class="sec-title centred mb_50">
-                    <span class="sub-title">Table Booking</span>
-                    <h2>Pre-Order to Make a <br />Reservation</h2>
+                    <h2>Get in Touch</h2>
                 </div>
                 <div class="form-inner">
                     <form action="index.html" method="post">
@@ -374,7 +377,7 @@ $gallery_images = array_values(array_filter(
                                 <textarea name="message" placeholder="Special request"></textarea>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn centred">
-                                <button type="submit" class="theme-btn-one">Make a Reservation</button>
+                                <button type="submit" class="theme-btn-one">Submit</button>
                             </div>
                         </div>
                     </form>
