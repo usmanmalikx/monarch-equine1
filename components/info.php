@@ -20,3 +20,10 @@ if (!function_exists('site_esc')) {
         return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
     }
 }
+
+$events = [
+    ['image' => 'images/event-wedding.jpg', 'title' => 'Weddings', 'link' => 'index-3.html'],
+    ['image' => 'images/event-birthday.jpg', 'title' => 'Birthday',    'link' => 'index-3.html'],
+    ['image' => 'images/event-anniversary.jpg', 'title' => 'Anniversary',    'link' => 'index-3.html'],
+    ['image' => 'images/event-quinceanera.jpg', 'title' => 'Quinceañera',   'link' => 'index-3.html'],
+];

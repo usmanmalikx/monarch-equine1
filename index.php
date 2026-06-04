@@ -145,161 +145,92 @@
         </section>
 
 
-        <section class="deal-section sec-pad centred">
-            <div class="auto-container">
-                <div class="sec-title mb_45">
-                    <span class="sub-title">Event Types</span>
-                    <h2>Deal Of The Day</h2>
+        
+
+
+
+        <!-- gallery-style-two -->
+        <?php
+$gallery_dir = __DIR__ . '/images/gallery';
+$allowed_ext = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+
+$gallery_images = array_values(array_filter(
+    scandir($gallery_dir),
+    fn($file) => in_array(strtolower(pathinfo($file, PATHINFO_EXTENSION)), $allowed_ext)
+));
+?>
+
+<section class="gallery-style-two sec-pad pb_50">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-12 col-sm-12 title-column">
+                <div class="sec-title mr_50">
+                    <span class="sub-title">Our Gallery</span>
+                    <h2>Let's See Our Gallery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas.</p>
                 </div>
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
-                        <div class="deal-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="assets/images/resource/deal-1.jpg" alt=""></figure>
-                                </div>
-                                <div class="text">
-                                    <h3><a href="index-3.html">Breakfast</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
-                        <div class="deal-block-one wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="assets/images/resource/deal-2.jpg" alt=""></figure>
-                                </div>
-                                <div class="text">
-                                    <h3><a href="index-3.html">Launch</a></h3>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 carousel-column">
+                <div class="carousel-content ml_30">
+                    <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
+                        <?php foreach ($gallery_images as $image): ?>
+                            <?php $src = 'images/gallery/' . htmlspecialchars($image); ?>
+                            <div class="gallery-block-two">
+                                <div class="inner-box">
+                                    <figure class="image-box">
+                                        <img src="<?= $src ?>" alt="<?= htmlspecialchars(pathinfo($image, PATHINFO_FILENAME)) ?>">
+                                    </figure>
+                                    <div class="content-box">
+                                        <div class="view-btn">
+                                            <a href="<?= $src ?>" class="lightbox-image" data-fancybox="gallery">
+                                                <i class="icon-16"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
-                        <div class="deal-block-one wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="assets/images/resource/deal-3.jpg" alt=""></figure>
-                                    <span>$18</span>
-                                </div>
-                                <div class="text">
-                                    <h3><a href="index-3.html">Dinner</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
-                        <div class="deal-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="assets/images/resource/deal-4.jpg" alt=""></figure>
-                                    <span>$15</span>
-                                </div>
-                                <div class="text">
-                                    <h3><a href="index-3.html">Dessert</a></h3>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+        <!-- gallery-style-two end -->
 
-        <!-- gallery-section -->
-        <section class="gallery-section pt_65">
-            <div class="auto-container">
-                <div class="gallery-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
-                    <div class="gallery-block-one">
+
+<section class="deal-section sec-pad centred">
+    <div class="auto-container">
+        <div class="sec-title mb_45">
+            <span class="sub-title">Event Types</span>
+        </div>
+        <div class="row clearfix">
+            <?php foreach ($events as $index => $event): ?>
+                <?php $delay = $index * 200; ?>
+                <div class="col-lg-3 col-md-6 col-sm-12 deal-block">
+                    <div class="deal-block-one wow fadeInUp animated"
+                         data-wow-delay="<?= $delay ?>ms"
+                         data-wow-duration="1500ms"
+                         style="visibility: visible; animation-duration: 1500ms; animation-delay: <?= $delay ?>ms; animation-name: fadeInUp;">
                         <div class="inner-box">
-                            <figure class="image-box"><img src="assets/images/gallery/gallery-1.jpg" alt=""></figure>
-                            <div class="content-box">
-                                <h4><a href="index.html">Top 10 breakfast spots in Paris</a></h4>
-                                <span>Breakfast</span>
+                            <div class="image-box">
+                                <figure class="image">
+                                    <img src="<?= htmlspecialchars($event['image']) ?>" alt="<?= htmlspecialchars($event['title']) ?>">
+                                </figure>
                             </div>
-                        </div>
-                    </div>
-                    <div class="gallery-block-one">
-                        <div class="inner-box">
-                            <figure class="image-box"><img src="assets/images/gallery/gallery-2.jpg" alt=""></figure>
-                            <div class="content-box">
-                                <h4><a href="index.html">Top 10 breakfast spots in Paris</a></h4>
-                                <span>Breakfast</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-block-one">
-                        <div class="inner-box">
-                            <figure class="image-box"><img src="assets/images/gallery/gallery-3.jpg" alt=""></figure>
-                            <div class="content-box">
-                                <h4><a href="index.html">Top 10 breakfast spots in Paris</a></h4>
-                                <span>Breakfast</span>
+                            <div class="text">
+                                <h3><a href="<?= htmlspecialchars($event['link']) ?>"><?= htmlspecialchars($event['title']) ?></a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- gallery-section -->
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
 
 
-        <!-- promotion-section -->
-        <section class="promotion-section sec-pad">
-            <div class="auto-container">
-                <div class="sec-title centred mb_45">
-                    <span class="sub-title">Promotion</span>
-                    <h2>Check Our All Flavours <br />Summer Promo</h2>
-                </div>
-                <div class="promotion-block-one">
-                    <div class="inner-box">
-                        <div class="shape" style="background-image: url(images/shape-2.png);"></div>
-                        <div class="row clearfix">
-                            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                <div class="image-box">
-                                    <figure class="image"><img src="assets/images/resource/promotion-1.jpg" alt=""></figure>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                <div class="content-box">
-                                    <div class="content-shape" style="background-image: url(assets/images/shape/shape-9.png);"></div>
-                                    <h2>Over <span>250</span> Delicious & Tasty Recipes</h2>
-                                    <h4>Get 25% Off</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet ultricies eu. Eget at porttitor.</p>
-                                    <a href="index.html" class="theme-btn-one">Let’s Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="promotion-block-one">
-                    <div class="inner-box">
-                        <div class="shape" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-                        <div class="row clearfix">
-                            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                                <div class="content-box">
-                                    <div class="content-shape" style="background-image: url(assets/images/shape/shape-9.png);"></div>
-                                    <h2>Over <span>250</span> Delicious & Tasty Recipes</h2>
-                                    <h4>Get 25% Off</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet ultricies eu. Eget at porttitor.</p>
-                                    <a href="index.html" class="theme-btn-one">Let’s Order Now</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                                <div class="image-box">
-                                    <figure class="image"><img src="assets/images/resource/promotion-2.jpg" alt=""></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- promotion-section end -->
-
-
-
-
-<section class="video-style-two centred">
+<section class="video-style-two centred  sec-pad">
             <div class="auto-container">
                 <div class="inner-box" style="background-image: url(assets/images/background/video-bg-2.jpg);">
                     <div class="sec-title light mb_100">
