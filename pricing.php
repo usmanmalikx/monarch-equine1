@@ -60,9 +60,9 @@
 
         <!-- menu-style-four -->
         <section class="menu-style-four">
-            <div class="auto-container">>
+            <div class="auto-container">
                 <div class="inner-container">
-                    <div class="menu-block-two">
+                    <div class="menu-block-two pricing-menu-list">
                         <div class="inner-box">
                             <div class="shape">
                                 <div class="shape-1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
@@ -71,7 +71,6 @@
                                 <div class="shape-4" style="background-image: url(assets/images/shape/shape-2.png);"></div>
                             </div>
                             <div class="single-item">
-                                <figure class="menu-image"><img src="assets/images/resource/menu-1.jpg" alt=""></figure>
                                 <div class="inner">
                                     <div class="upper-box">
                                         <h4><a href="shop-details.html">American Combo Menu</a></h4>
@@ -83,7 +82,6 @@
                                 </div>
                             </div>
                             <div class="single-item">
-                                <figure class="menu-image"><img src="assets/images/resource/menu-2.jpg" alt=""></figure>
                                 <div class="inner">
                                     <div class="upper-box">
                                         <h4><a href="shop-details.html">Strawberry Jam French Toast </a></h4>
@@ -95,7 +93,6 @@
                                 </div>
                             </div>
                             <div class="single-item">
-                                <figure class="menu-image"><img src="assets/images/resource/menu-3.jpg" alt=""></figure>
                                 <div class="inner">
                                     <div class="upper-box">
                                         <h4><a href="shop-details.html">Optic Breakfast Combo</a></h4>
@@ -107,7 +104,6 @@
                                 </div>
                             </div>
                             <div class="single-item">
-                                <figure class="menu-image"><img src="assets/images/resource/menu-1.jpg" alt=""></figure>
                                 <div class="inner">
                                     <div class="upper-box">
                                         <h4><a href="shop-details.html">American Combo Menu</a></h4>
@@ -119,7 +115,6 @@
                                 </div>
                             </div>
                             <div class="single-item">
-                                <figure class="menu-image"><img src="assets/images/resource/menu-2.jpg" alt=""></figure>
                                 <div class="inner">
                                     <div class="upper-box">
                                         <h4><a href="shop-details.html">Strawberry Jam French Toast </a></h4>
