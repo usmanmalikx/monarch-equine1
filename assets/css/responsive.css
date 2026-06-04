@@ -130,7 +130,7 @@
 @media only screen and (max-width: 991px){
 
   .header-top .top-inner .right-column{
-    display: none;
+    display: block;
   }
 
   .header-top .top-inner{
@@ -138,7 +138,17 @@
   }
 
   .header-top .top-inner{
+    flex-direction: column;
     justify-content: center;
+    gap: 15px;
+  }
+
+  .header-top .top-inner .left-column{
+    justify-content: center;
+  }
+
+  .header-top .btn-box{
+    text-align: center;
   }
 
   .image_block_one .image-box,
