@@ -232,10 +232,9 @@ $gallery_images = array_values(array_filter(
 
 <section class="video-style-two centred  sec-pad">
             <div class="auto-container">
-                <div class="inner-box" style="background-image: url(assets/images/background/video-bg-2.jpg);">
-                    <div class="sec-title light mb_100">
-                        <span class="sub-title">Watch Video</span>
-                        <h2>Our Special &amp; Best Quality <br>Cooking</h2>
+                <div class="inner-box" style="background-image: url(images/video.jpg);">
+                    <div class="sec-title white mb_100">
+                        <h2>Get a charming tour</h2>
                     </div>
                     <div class="video-btn">
                         <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="icon-14"></i></a>
@@ -249,25 +248,18 @@ $gallery_images = array_values(array_filter(
         <section class="news-section sec-pad">
             <div class="auto-container">
                 <div class="sec-title centred mb_45">
-                    <span class="sub-title">Ticrou News</span>
-                    <h2>Know More About The <br />Ticrou Article</h2>
+                    <span class="sub-title">Tips and Guides</span>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><a href="blog-details.html"><img src="assets/images/news/news-1.jpg" alt=""></a></figure>
-                                    <div class="date">15 <span>APRIL</span></div>
+                                    <figure class="image"><a href="blog-details.html"><img src="images/blog1.jpg" alt=""></a></figure>
                                 </div>
                                 <div class="lower-content">
                                     <h3><a href="blog-details.html">Right Way to Make Cold Coffee</a></h3>
-                                    <ul class="post-info clearfix">
-                                        <li><i class="icon-10"></i><a href="blog-details.html">Admin</a></li>
-                                        <li><i class="icon-11"></i><a href="blog-details.html">0 Comment</a></li>
-                                    </ul>
                                     <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
-                                    <div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -276,17 +268,11 @@ $gallery_images = array_values(array_filter(
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><a href="blog-details.html"><img src="assets/images/news/news-2.jpg" alt=""></a></figure>
-                                    <div class="date">12 <span>APRIL</span></div>
+                                    <figure class="image"><a href="blog-details.html"><img src="images/blog2.jpg" alt=""></a></figure>
                                 </div>
                                 <div class="lower-content">
                                     <h3><a href="blog-details.html">Truly Amazing Blueberry Recipes</a></h3>
-                                    <ul class="post-info clearfix">
-                                        <li><i class="icon-10"></i><a href="blog-details.html">Admin</a></li>
-                                        <li><i class="icon-11"></i><a href="blog-details.html">4 Comment</a></li>
-                                    </ul>
                                     <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
-                                    <div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -295,17 +281,11 @@ $gallery_images = array_values(array_filter(
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><a href="blog-details.html"><img src="assets/images/news/news-3.jpg" alt=""></a></figure>
-                                    <div class="date">11 <span>APRIL</span></div>
+                                    <figure class="image"><a href="blog-details.html"><img src="images/blog2.jpg" alt=""></a></figure>
                                 </div>
                                 <div class="lower-content">
                                     <h3><a href="blog-details.html">The benefits of Buffalo Meat</a></h3>
-                                    <ul class="post-info clearfix">
-                                        <li><i class="icon-10"></i><a href="blog-details.html">Admin</a></li>
-                                        <li><i class="icon-11"></i><a href="blog-details.html">1 Comment</a></li>
-                                    </ul>
                                     <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
-                                    <div class="btn-box"><a href="blog-details.html" class="theme-btn-two">Read More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +298,7 @@ $gallery_images = array_values(array_filter(
 
         <!-- order-section -->
         <section class="order-section bg-color-2">
-            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-14.png);"></div>
+            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-14-light.png);"></div>
             <div class="shape">
                 <div class="shape-1" style="background-image: url(assets/images/shape/shape-15.png);"></div>
                 <div class="shape-2" style="background-image: url(assets/images/shape/shape-16.png);"></div>

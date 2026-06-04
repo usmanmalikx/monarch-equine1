@@ -591,7 +591,9 @@ img {
 .sec-title.light h2{
   color: #222;
 }
-
+.sec-title.white h2{
+  color: #fff;
+}
 
 
 

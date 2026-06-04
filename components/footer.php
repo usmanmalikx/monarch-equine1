@@ -4,7 +4,7 @@
             <div class="footer-top pt_85 pb_100">
                 <div class="auto-container">
                     <div class="row align-items-center clearfix">
-                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget schedule-widget text-right">
                                 <div class="widget-title">
                                     <h3>Opening Times</h3>
@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget text-center">
                                 <div class="shape">
                                     <div class="shape-1" style="background-image: url(assets/images/shape/shape-19.png);"></div>
@@ -27,9 +27,6 @@
                                 </div>
                                 <div class="widget-content">
                                     <figure class="footer-logo"><a href="index.html"><img src="images/logo-full.png" alt=""></a></figure>
-                                    <div class="text">
-                                        <p>Tincidunt neque pretium lectus donec risus. Mauris mi tempor nunc orc leo consequat vitae erat gravida lobortis nec et sagittis.</p>
-                                    </div>
                                     <ul class="social-links clearfix">
                                         <?php foreach ($site_social_links as $social_link) : ?>
                                             <li><a href="<?= site_esc($social_link['url']); ?>"><i class="<?= site_esc($social_link['icon']); ?>"></i></a></li>
@@ -38,7 +35,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class=" footer-widget contact-widget text-left">
                                 <div class="widget-title">
                                     <h3>Contact Info</h3>
@@ -58,7 +55,7 @@
             <div class="footer-bottom centred dark">
                 <div class="auto-container">
                     <div class="copyright dark">
-                        <p>Copyright 2026 by <a href="index.html">ticrou</a> All Right Reserved.</p>
+                        <p>Copyright <?= date('Y') ?> <?= site_esc($site_name); ?> All Right Reserved.</p>
                     </div>
                 </div>
             </div>
