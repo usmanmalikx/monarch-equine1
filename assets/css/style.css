@@ -4892,7 +4892,7 @@ div#mCSB_1_container{
   height: 100%;
   left: 0px;
   top: 0px;
-  background: linear-gradient(180deg, #000000 15.56%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, #fff 15.56%, rgba(0, 0, 0, 0) 100%);
 }
 
 .page-title .content-box h2{
@@ -4900,7 +4900,7 @@ div#mCSB_1_container{
   display: block;
   font-size: 60px;
   line-height: 70px;
-  color: #fff;
+  color: var(--brand-color);
   font-weight: 700;
   margin-bottom: 10px;
 }

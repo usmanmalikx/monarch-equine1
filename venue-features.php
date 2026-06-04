@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>Ticrou - HTML 5 Template Preview</title>
+<title>Venue Features - <?= site_esc($site_name); ?></title>
 
 <!-- Fav Icon -->
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -50,11 +50,7 @@
             <div class="bg-layer" style="background-image: url(assets/images/background/page-title.jpg);"></div>
             <div class="auto-container">
                 <div class="content-box">
-                    <h2>Our Menu</h2>
-                    <ul class="bread-crumb clearfix">
-                        <li><a href="index.html">Home</a></li>
-                        <li>Our Menu</li>
-                    </ul>
+                    <h2>Venue Features</h2>
                 </div>
             </div>
         </section>
