@@ -255,45 +255,40 @@ $gallery_images = array_values(array_filter(
                     <span class="sub-title">Tips and Guides</span>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="blog-details.html"><img src="images/blog1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <h3><a href="blog-details.html">Right Way to Make Cold Coffee</a></h3>
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="blog-details.html"><img src="images/blog2.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <h3><a href="blog-details.html">Truly Amazing Blueberry Recipes</a></h3>
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="blog-details.html"><img src="images/blog2.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <h3><a href="blog-details.html">The benefits of Buffalo Meat</a></h3>
-                                    <p>In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
+                    <?php 
+                    $news_items = [
+                        ['title' => 'Right Way to Make Cold Coffee', 
+                        'link' => 'blogs/1-post.php', 
+                        'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
+                        'image' => 'images/blog1.jpg'],
+
+                        ['title' => 'Truly Amazing Blueberry Recipes', 
+                        'link' => 'blogs/2-post.php', 
+                        'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
+                        'image' => 'images/blog2.jpg'],
+
+                        ['title' => 'The benefits of Buffalo Meat', 
+                        'link' => 'blogs/3-post.php', 
+                        'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
+                        'image' => 'images/blog2.jpg']
+                    ];
+                    foreach ($news_items as $index => $news): 
+                        $delay = $index * 300;
+                    ?>
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow fadeInUp animated" data-wow-delay="<?= sprintf('%02d', $delay) ?>ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <div class="image-box">
+                                        <figure class="image"><a href="<?= site_esc($news['link']) ?>"><img src="<?= site_esc($news['image']) ?>" alt="<?= site_esc($news['title']) ?>"></a></figure>
+                                    </div>
+                                    <div class="lower-content">
+                                        <h3><a href="<?= site_esc($news['link']) ?>"><?= site_esc($news['title']) ?></a></h3>
+                                        <p><?= site_esc($news['desc']) ?></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>
