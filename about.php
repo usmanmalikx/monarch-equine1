@@ -89,58 +89,35 @@
 
 
 
-        <!-- service-section -->
+        <!-- events-section -->
         <section class="service-section alternat-2 sec-pad centred">
             <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.png);"></div>
             <div class="auto-container">
                 <div class="sec-title mb_50">
-                    <span class="sub-title">Services</span>
-                    <h2>Quality & Passion with <br />Our Services</h2>
+                    <span class="sub-title">Event Types</span>
+                    <h2>Quality & Service Is <br />Our Passion</h2>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="icon-box"><i class="icon-17"></i></div>
-                                <h3><a href="index-3.html">Birtdhday Party</a></h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet tricies.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="icon-box"><i class="icon-18"></i></div>
-                                <h3><a href="index-3.html">French Bakery</a></h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet tricies.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="icon-box"><i class="icon-19"></i></div>
-                                <h3><a href="index-3.html">Coffee to Go</a></h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet tricies.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="icon-box"><i class="icon-20"></i></div>
-                                <h3><a href="index-3.html">Online Delivery</a></h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet tricies.</p>
-                                <div class="btn-box">
-                                    <a href="index-3.html" class="theme-btn-two">Read More</a>
+                    <?php foreach ($events as $index => $event): ?>
+                        <?php $delay = $index * 200; ?>
+                        <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-one wow fadeInUp animated" data-wow-delay="<?= sprintf('%02d', $delay) ?>ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <div class="icon-box2" style="overflow: hidden; line-height: 0;">
+                                        <img src="<?= site_esc($event['image'] ?? ''); ?>" alt="<?= site_esc($event['title'] ?? 'Event'); ?>" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <h3><a href="<?= site_esc($event['link'] ?? '#'); ?>"><?= site_esc($event['title'] ?? 'Event'); ?></a></h3>
+                                    <?php if (!empty($event['desc'])): ?>
+                                        <p><?= site_esc($event['desc']); ?></p>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>
-        <!-- service-section end -->
+        <!-- events-section end -->
 
 
 

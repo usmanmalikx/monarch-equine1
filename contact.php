@@ -59,17 +59,10 @@
 
         <!-- contact-section -->
         <section class="contact-section">
-            <figure class="vector-1"><img src="assets/images/icons/vector-2.png" alt=""></figure>
-            <figure class="vector-2"><img src="assets/images/icons/vector-4.png" alt=""></figure>
-            <figure class="vector-3"><img src="assets/images/icons/vector-6.png" alt=""></figure>
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-12 col-sm-12 info-column">
                         <div class="info-inner">
-                            <div class="text">
-                                <h2><?= site_esc($site_name); ?> Info</h2>
-                                <p>Mauris magna sit elementum facilis lacusacphar.</p>
-                            </div>
                             <ul class="info-list clearfix">
                                 <li>
                                     <i class="icon-39"></i>
@@ -93,7 +86,7 @@
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 form-column">
                         <div class="form-inner centred">
-                            <h2>Get In Touch with <br />Ticrou</h2>
+                            <h2>Get In Touch</h2>
                             <form method="post" action="sendemail.php" id="contact-form"> 
                                 <div class="row clearfix">
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">

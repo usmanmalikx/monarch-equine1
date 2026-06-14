@@ -1,5 +1,5 @@
 <?php
-$site_name = 'Monarch Equine';
+$site_name = 'Monarch Garden';
 $site_email = 'monarch-garden@outlook.com';
 $site_phone = '805-901-0874';
 $site_phone_link = '805-901-0874';

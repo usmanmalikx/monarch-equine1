@@ -48,16 +48,30 @@
 
 
 
-        <!-- Page Title -->
-        <section class="page-title centred">
-            <div class="bg-layer" style="background-image: url(assets/images/background/page-title.jpg);"></div>
+
+        <!-- about-style-two -->
+        <section class="about-style-two sec-pad">
+            <div class="shape">
+                <div class="shape-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
+                <div class="shape-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
+            </div>
             <div class="auto-container">
-                <div class="content-box">
-                    <h2>Application</h2>
+                <div class="sec-title centred mb_40">
+                    <h2>Schedule a Tour</h2>
+                </div>
+                <div class="text-inner p_relative d_block mb_60">
+                    <div class="row clearfix">
+                        <div class="col-lg-12 text-column">
+                            <div class="text mr_30">
+                                <p>Founded in May 2026, Monarch Gardens was born from a simple but meaningful dream. Julio Villegas, father to Cesar and Juliana, wanted to create something special that the family could build together—something that would bring people together and create lasting memories.As a family, we envisioned a place where life’s most cherished moments could be celebrated in a beautiful and welcoming setting. </p>
+                                <p>From that vision, Monarch Gardens came to life. What began as a family project quickly became a passion: creating a venue where love, joy, and meaningful connections can flourish.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- End Page Title -->
+        <!-- about-style-two end -->
 
 
 

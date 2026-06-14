@@ -4723,6 +4723,21 @@ div#mCSB_1_container{
   transition: all 500ms ease;
 }
 
+.service-block-one .inner-box .icon-box2{
+  position: relative;
+  display: inline-block;
+  width: 190px;
+  height: 190px;
+  line-height: 90px;
+  background: #F6F6F6;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+  margin-bottom: 18px;
+  transition: all 500ms ease;
+}
+
 .service-block-one .inner-box:hover .icon-box{
   color: #fff;
 }
