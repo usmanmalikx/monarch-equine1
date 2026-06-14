@@ -257,17 +257,17 @@ $gallery_images = array_values(array_filter(
                 <div class="row clearfix">
                     <?php 
                     $news_items = [
-                        ['title' => 'Right Way to Make Cold Coffee', 
+                        ['title' => '5 Things to Ask Before Booking an Event Space', 
                         'link' => 'blogs/1-post.php', 
                         'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
                         'image' => 'images/blog1.jpg'],
 
-                        ['title' => 'Truly Amazing Blueberry Recipes', 
+                        ['title' => 'Why a Family-Owned Venue Makes Your Day More Personal', 
                         'link' => 'blogs/2-post.php', 
                         'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
                         'image' => 'images/blog2.jpg'],
 
-                        ['title' => 'The benefits of Buffalo Meat', 
+                        ['title' => 'How to Choose the Perfect Venue for Your Quinceañera', 
                         'link' => 'blogs/3-post.php', 
                         'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
                         'image' => 'images/blog2.jpg']

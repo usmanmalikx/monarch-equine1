@@ -10,7 +10,7 @@
 <!-- Use base href so assets and images from the root folder work correctly -->
 <base href="../">
 
-<title>3 Post - <?= site_esc($site_name); ?></title>
+<title>How to Choose the Perfect Venue for Your Quinceañera - <?= site_esc($site_name); ?></title>
 
 <!-- Fav Icon -->
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -49,7 +49,7 @@
             <div class="bg-layer" style="background-image: url(assets/images/background/page-title.jpg);"></div>
             <div class="auto-container">
                 <div class="content-box">
-                    <h2>3 Post</h2>
+                    <h2>How to Choose the Perfect Venue for Your Quinceañera</h2>
                 </div>
             </div>
         </section>

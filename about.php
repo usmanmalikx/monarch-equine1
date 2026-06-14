@@ -65,25 +65,24 @@
             </div>
             <div class="auto-container">
                 <div class="sec-title centred mb_40">
-                    <span class="sub-title">Traditional & Modern Service <br />Since <span>1970</span></span>
+                    <span class="sub-title">Traditional & Modern Service <br />Founed in <span>2026</span></span>
                 </div>
                 <div class="text-inner p_relative d_block mb_60">
                     <div class="row clearfix">
                         <div class="col-lg-6 col-md-12 col-sm-12 text-column">
                             <div class="text mr_30">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat pellent esque blandit sodales arcu. Auctor gravida vel et tempus. Malesuada erat dolor magna luctus congue leo tellus mattis. Volutpat neque, erat nis donec sed urna aliquet.</p>
-                                <p>Maecenas mattis facilisi erat odio at. Quisque nullam nunc tincidunt ante. etiam eget augue velit ultricies amet.</p>
+                                <p>Founded in May 2026, Monarch Gardens was born from a simple but meaningful dream. Julio Villegas, father to Cesar and Juliana, wanted to create something special that the family could build together—something that would bring people together and create lasting memories.As a family, we envisioned a place where life’s most cherished moments could be celebrated in a beautiful and welcoming setting. </p>
+                                <p>From that vision, Monarch Gardens came to life. What began as a family project quickly became a passion: creating a venue where love, joy, and meaningful connections can flourish.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 text-column">
                             <div class="text ml_30">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat pellent esque blandit sodales arcu. Auctor gravida vel et tempus. Malesuada erat dolor magna luctus congue leo tellus mattis. Volutpat neque, erat nis donec sed urna aliquet.</p>
-                                <p>Maecenas mattis facilisi erat odio at. Quisque nullam nunc tincidunt ante. etiam eget augue velit ultricies amet.</p>
+                                <p>Today, Monarch Gardens is more than just a venue—it is a reflection of our family’s values, dedication, and commitment to serving others. We are honored to be part of your most important milestones and to provide a space where unforgettable memories are made for generations to come.</p>
+                                <p>Welcome to Monarch Gardens, where every celebration becomes part of a beautiful story.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <figure class="signature centred"><img src="assets/images/icons/signature-1.png" alt=""></figure>
             </div>
         </section>
         <!-- about-style-two end -->
@@ -105,9 +104,6 @@
                                 <div class="icon-box"><i class="icon-17"></i></div>
                                 <h3><a href="index-3.html">Birtdhday Party</a></h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet tricies.</p>
-                                <div class="btn-box">
-                                    <a href="index-3.html" class="theme-btn-two">Read More</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -117,9 +113,6 @@
                                 <div class="icon-box"><i class="icon-18"></i></div>
                                 <h3><a href="index-3.html">French Bakery</a></h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet tricies.</p>
-                                <div class="btn-box">
-                                    <a href="index-3.html" class="theme-btn-two">Read More</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -129,9 +122,6 @@
                                 <div class="icon-box"><i class="icon-19"></i></div>
                                 <h3><a href="index-3.html">Coffee to Go</a></h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet tricies.</p>
-                                <div class="btn-box">
-                                    <a href="index-3.html" class="theme-btn-two">Read More</a>
-                                </div>
                             </div>
                         </div>
                     </div>
