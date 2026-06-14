@@ -53,10 +53,10 @@
                     <div class="image-layer p_absolute" style="background-image:url(images/slider-1.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
-                            <h2 class="p_relative d_block">We Serve Quality Food</h2>
-                            <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
+                            <h2 class="p_relative d_block">Where Every Celebration Becomes a Beautiful Story</h2>
+                            <p class="p_relative d_block">A family-owned venue crafted with love — for weddings, birthdays, quinceañeras, and every milestone in between.</p>
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn-one">Make Reservation</a>
+                                <a href="application.php" class="theme-btn-one">Schedule a Tour</a>
                             </div>
                         </div> 
                     </div>
@@ -65,10 +65,10 @@
                     <div class="image-layer p_absolute" style="background-image:url(images/slider-2.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
-                            <h2 class="p_relative d_block">We Serve Quality Food</h2>
+                            <h2 class="p_relative d_block">The Perfect Setting for Life's Most Cherished Moments</h2>
                             <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn-one">Make Reservation</a>
+                                <a href="application.php" class="theme-btn-one">Schedule a Tour</a>
                             </div>
                         </div> 
                     </div>
@@ -77,10 +77,10 @@
                     <div class="image-layer p_absolute" style="background-image:url(images/slider-3.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
-                            <h2 class="p_relative d_block">We Serve Quality Food</h2>
+                            <h2 class="p_relative d_block">Family-Owned. Elegantly Designed. Unforgettable.</h2>
                             <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn-one">Make Reservation</a>
+                                <a href="application.php" class="theme-btn-one">Schedule a Tour</a>
                             </div>
                         </div> 
                     </div>
@@ -110,14 +110,13 @@
                             <div class="content-box">
                                 <div class="sec-title mb_30">
                                     <span class="sub-title">Our Story</span>
-                                    <h2>Traditional & Modern Service <span>Since 1970</span></h2>
+                                    <h2>A Family Dream, Built for Your Most Meaningful Moments</h2>
                                 </div>
                                 <div class="text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas suspendisse amet ultricies eu. Eget at porttitor morbi blandit ac vitae, dolor. Gravida eu vel ac luctus. Hac a vel est malesuada tellus sed nunc, etiam maecenas.</p>
+                                    <p>Founded in May 2026 by the Villegas family, Monarch Gardens was born from a father's vision — Julio Villegas wanted to create something his family could build together, and the world could celebrate in. What started as a family project became a true passion: a space where love, joy, and connection flourish. Today, Monarch Gardens is a reflection of our values, our dedication, and our commitment to being part of your most important milestones.</p>
                                 </div>
-                                <figure class="signature"><img src="assets/images/icons/signature-1.png" alt=""></figure>
                                 <div class="btn-box">
-                                    <a href="about.html" class="theme-btn-one">Our Story</a>
+                                    <a href="about.php" class="theme-btn-one">Our Story</a>
                                 </div>
                             </div>
                         </div>
@@ -137,9 +136,9 @@
             </div>
             <div class="auto-container">
                 <div class="sec-title light">
-                    <span class="sub-title">Get 25% Discount</span>
-                    <h2>Explore Special Taste &amp; The <br>Best Quality</h2>
-                    <a href="index.html" class="theme-btn-one mt_45">Make a Reservation</a>
+                    <span class="sub-title">A Venue That Feels Like Family</span>
+                    <h2>From intimate gatherings to grand celebrations, we're honored to host your most cherished moments.</h2>
+                    <a href="index.html" class="theme-btn-one mt_45">Schedule a Tour</a>
                 </div>
             </div>
         </section>
@@ -165,9 +164,9 @@ $gallery_images = array_values(array_filter(
         <div class="row clearfix">
             <div class="col-lg-4 col-md-12 col-sm-12 title-column">
                 <div class="sec-title mr_50">
-                    <span class="sub-title">Our Gallery</span>
-                    <h2>Let's See Our Gallery</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit purus egestas diam sit vitae egestas.</p>
+                    <span class="sub-title">See the Magic of </span>
+                    <h2>Monarch Gardens</h2>
+                    <p>Every corner of our venue is designed to be photographed, remembered, and cherished. Take a look at the celebrations that have graced our space.</p>
                 </div>
             </div>
             <div class="col-lg-8 col-md-12 col-sm-12 carousel-column">
@@ -219,7 +218,7 @@ $gallery_images = array_values(array_filter(
                                 </figure>
                             </div>
                             <div class="text">
-                                <h3><a href="<?= htmlspecialchars($event['link']) ?>"><?= htmlspecialchars($event['title']) ?></a></h3>
+                                <h3><?= htmlspecialchars($event['title']) ?></h3>
                             </div>
                         </div>
                     </div>
@@ -238,10 +237,11 @@ $gallery_images = array_values(array_filter(
             <div class="auto-container">
                 <div class="inner-box" style="background-image: url(images/video.jpg);">
                     <div class="sec-title white mb_100">
-                        <h2>Get a charming tour</h2>
+                        <h2>Get a Charming Tour</h2>
+                        <span class="text-white">Take a virtual walk through Monarch Gardens and imagine your celebration coming to life.</span>
                     </div>
                     <div class="video-btn">
-                        <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="icon-14"></i></a>
+                        <a href="https://www.youtube.com/watch?v=N_4aKV5SmHY" class="lightbox-image" data-caption=""><i class="icon-14"></i></a>
                     </div>
                 </div>
             </div>
