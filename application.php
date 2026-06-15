@@ -59,15 +59,97 @@
                 <div class="sec-title centred mb_40">
                     <h2>Schedule a Tour</h2>
                 </div>
-                <div class="text-inner p_relative d_block mb_60">
-                    <div class="row clearfix">
-                        <div class="col-lg-12 text-column">
-                            <div class="text mr_30">
-                                <p>Founded in May 2026, Monarch Gardens was born from a simple but meaningful dream. Julio Villegas, father to Cesar and Juliana, wanted to create something special that the family could build together—something that would bring people together and create lasting memories.As a family, we envisioned a place where life’s most cherished moments could be celebrated in a beautiful and welcoming setting. </p>
-                                <p>From that vision, Monarch Gardens came to life. What began as a family project quickly became a passion: creating a venue where love, joy, and meaningful connections can flourish.</p>
-                            </div>
+                <div class="form-inner p_relative d_block mb_60" style="max-width: 700px; margin: 0 auto; background: #fff; padding: 50px; box-shadow: 0px 15px 40px rgba(0,0,0,0.07); border-radius: 10px;">
+                    <?php
+                    // Define the questions and their types here
+                    $questions = [
+                        [
+                            'id' => 'subject', // Maps to the subject in your sendemail.php
+                            'question' => 'What type of event are you planning?',
+                            'type' => 'select',
+                            'options' => ['Wedding', 'Birthday', 'Quinceañera', 'Corporate', 'Other']
+                        ],
+                        [
+                            'id' => 'guest_count',
+                            'question' => 'Estimated number of guests?',
+                            'type' => 'radio',
+                            'options' => ['Less than 50', '50-100', '100-200', '200+']
+                        ],
+                        [
+                            'id' => 'event_date',
+                            'question' => 'Preferred Event Date?',
+                            'type' => 'text',
+                            'placeholder' => 'e.g., Spring 2027 or Specific Date'
+                        ],
+                        [
+                            'id' => 'username', // Maps to your sendemail.php
+                            'question' => 'Your Full Name',
+                            'type' => 'text',
+                            'placeholder' => 'John Doe'
+                        ],
+                        [
+                            'id' => 'email', // Maps to your sendemail.php
+                            'question' => 'Your Email Address',
+                            'type' => 'email',
+                            'placeholder' => 'john@example.com'
+                        ],
+                        [
+                            'id' => 'phone', // Maps to your sendemail.php
+                            'question' => 'Your Phone Number',
+                            'type' => 'text',
+                            'placeholder' => '(555) 555-5555'
+                        ]
+                    ];
+                    ?>
+                    
+                    <form id="tour-form" method="post" action="sendemail.php">
+                        <div class="progress-text mb_30" style="color: var(--brand-color); font-weight: 500; font-size: 16px;">
+                            Step <span id="current-step-display">1</span> of <?= count($questions) ?>
                         </div>
-                    </div>
+                        
+                        <?php foreach ($questions as $index => $q): ?>
+                            <div class="form-step" id="step-<?= $index ?>" style="<?= $index === 0 ? 'display:block;' : 'display:none;' ?>">
+                                <h3 class="mb_20"><?= site_esc($q['question']) ?></h3>
+                                <div class="form-group mb_30">
+                                    <?php if ($q['type'] === 'select'): ?>
+                                        <div class="select-box clearfix">
+                                            <select name="<?= site_esc($q['id']) ?>" class="wide" required>
+                                                <option data-display="Select an option" value="">Select an option</option>
+                                                <?php foreach ($q['options'] as $opt): ?>
+                                                    <option value="<?= site_esc($opt) ?>"><?= site_esc($opt) ?></option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </div>
+                                    <?php elseif ($q['type'] === 'radio'): ?>
+                                        <div class="row">
+                                        <?php foreach ($q['options'] as $optIndex => $opt): ?>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="<?= site_esc($q['id'] . '_' . $optIndex) ?>" name="<?= site_esc($q['id']) ?>" value="<?= site_esc($opt) ?>" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="<?= site_esc($q['id'] . '_' . $optIndex) ?>" style="cursor:pointer; font-size:16px; line-height: 24px; padding-top: 2px; padding-left: 10px;"><?= site_esc($opt) ?></label>
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
+                                        </div>
+                                    <?php else: ?>
+                                        <input type="<?= site_esc($q['type']) ?>" name="<?= site_esc($q['id']) ?>" placeholder="<?= site_esc($q['placeholder'] ?? '') ?>" style="width: 100%; height: 50px; border: 1px solid #e5e5e5; padding: 10px 20px; border-radius: 5px; font-size: 16px; background: transparent;" required>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div class="step-buttons mt_40 d-flex justify-content-between">
+                                    <?php if ($index > 0): ?>
+                                        <button type="button" class="theme-btn-two prev-step">Previous</button>
+                                    <?php endif; ?>
+                                    
+                                    <?php if ($index < count($questions) - 1): ?>
+                                        <button type="button" class="theme-btn-one next-step">Next</button>
+                                    <?php else: ?>
+                                        <button type="submit" class="theme-btn-one" name="submit-form">Submit Application</button>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </form>
                 </div>
             </div>
         </section>
@@ -100,6 +182,33 @@
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const steps = document.querySelectorAll('.form-step');
+            const stepDisplay = document.getElementById('current-step-display');
+            let currentStep = 0;
+
+            function showStep(index) {
+                steps.forEach((step, i) => {
+                    step.style.display = i === index ? 'block' : 'none';
+                });
+                stepDisplay.textContent = index + 1;
+            }
+
+            document.querySelectorAll('.next-step').forEach(button => {
+                button.addEventListener('click', () => {
+                    if(currentStep < steps.length - 1) showStep(++currentStep);
+                });
+            });
+
+            document.querySelectorAll('.prev-step').forEach(button => {
+                button.addEventListener('click', () => {
+                    if(currentStep > 0) showStep(--currentStep);
+                });
+            });
+        });
+    </script>
 
 </body><!-- End of .page_wrapper -->
 </html>
