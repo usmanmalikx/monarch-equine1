@@ -23,7 +23,7 @@ if (is_dir($gallery_dir)) {
 <title>Gallery - <?= site_esc($site_name); ?></title>
 
 <!-- Fav Icon -->
-<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
