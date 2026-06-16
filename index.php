@@ -53,8 +53,8 @@
                     <div class="image-layer p_absolute" style="background-image:url(images/slider-1.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
-                            <h2 class="p_relative d_block">Where Every Celebration Becomes a Beautiful Story</h2>
-                            <p class="p_relative d_block">A family-owned venue crafted with love — for weddings, birthdays, quinceañeras, and every milestone in between.</p>
+                            <h2 class="p_relative d_block">The Perfect Setting for Life's Most Cherished Moments</h2>
+                            <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
                             <div class="btn-box">
                                 <a href="application.php" class="theme-btn-one">Schedule a Tour</a>
                             </div>
@@ -138,7 +138,7 @@
                 <div class="sec-title light">
                     <span class="sub-title">A Venue That Feels Like Family</span>
                     <h2>From intimate gatherings to grand celebrations, we're honored to host your most cherished moments.</h2>
-                    <a href="index.html" class="theme-btn-one mt_45">Schedule a Tour</a>
+                    <a href="application.php" class="theme-btn-one mt_45">Schedule a Tour</a>
                 </div>
             </div>
         </section>
