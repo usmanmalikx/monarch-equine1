@@ -42,7 +42,7 @@
                     <div class="top-inner">
                         
                          <div class="btn-box d-flex justify-content-center w-100">
-                                <a href="application.php">Schedule a Tour</a>
+                                <a href="application.php">SCHEDULE A TOUR</a>
                             </div>
                     </div>
                 </div>

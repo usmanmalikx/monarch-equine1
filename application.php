@@ -64,7 +64,7 @@
                     // Define the questions and their types here
                     $questions = [
                         [
-                            'id' => 'subject', // Maps to the subject in your sendemail.php
+                            'id' => 'subject', 
                             'question' => 'What type of event are you planning?',
                             'type' => 'select',
                             'options' => ['Wedding', 'Birthday', 'Quinceañera', 'Corporate', 'Other']
@@ -82,19 +82,19 @@
                             'placeholder' => 'e.g., Spring 2027 or Specific Date'
                         ],
                         [
-                            'id' => 'username', // Maps to your sendemail.php
+                            'id' => 'username', 
                             'question' => 'Your Full Name',
                             'type' => 'text',
                             'placeholder' => 'John Doe'
                         ],
                         [
-                            'id' => 'email', // Maps to your sendemail.php
+                            'id' => 'email', 
                             'question' => 'Your Email Address',
                             'type' => 'email',
                             'placeholder' => 'john@example.com'
                         ],
                         [
-                            'id' => 'phone', // Maps to your sendemail.php
+                            'id' => 'phone',
                             'question' => 'Your Phone Number',
                             'type' => 'text',
                             'placeholder' => '(555) 555-5555'

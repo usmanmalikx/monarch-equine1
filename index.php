@@ -324,43 +324,22 @@ $gallery_images = array_values(array_filter(
                                 <div class="select-box">
                                     <select class="wide">
                                        <option data-display="Occasion">Occasion</option>
-                                       <option value="1">Occasion 01</option>
-                                       <option value="2">Occasion 02</option>
-                                       <option value="3">Occasion 03</option>
-                                       <option value="3">Occasion 04</option>
+                                       <option value="Wedding">Wedding</option>
+                                       <option value="Birthday">Birthday</option>
+                                       <option value="Quinceanera">Quinceañera</option>
+                                       <option value="Corporate">Corporate</option>
+                                       <option value="Other">Other</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                 <div class="select-box">
                                     <select class="wide">
-                                       <option data-display="Preferred food">Preferred food</option>
-                                       <option value="1">Preferred food 01</option>
-                                       <option value="2">Preferred food 02</option>
-                                       <option value="3">Preferred food 03</option>
-                                       <option value="3">Preferred food 04</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <div class="select-box">
-                                    <select class="wide">
-                                       <option data-display="Number of persons">Number of persons</option>
-                                       <option value="1">Number of persons 01</option>
-                                       <option value="2">Number of persons 02</option>
-                                       <option value="3">Number of persons 03</option>
-                                       <option value="3">Number of persons 04</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <div class="select-box">
-                                    <select class="wide">
-                                       <option data-display="Booking type">Booking type</option>
-                                       <option value="1">Booking type 01</option>
-                                       <option value="2">Booking type 02</option>
-                                       <option value="3">Booking type 03</option>
-                                       <option value="3">Booking type 04</option>
+                                       <option data-display="Number of persons">Number of guests</option>
+                                       <option value="'Less than 50">Less than 50</option>
+                                       <option value="50-100">50-100</option>
+                                       <option value="100-200">100-200</option>
+                                       <option value="200+'">200+'</option>
                                     </select>
                                 </div>
                             </div>
@@ -369,7 +348,7 @@ $gallery_images = array_values(array_filter(
                                 <input type="text" name="date" placeholder="Booking date" id="datepicker">
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <textarea name="message" placeholder="Special request"></textarea>
+                                <textarea name="message" placeholder="Comments/Questions"></textarea>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn centred">
                                 <button type="submit" class="theme-btn-one">Submit</button>
