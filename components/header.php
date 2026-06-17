@@ -40,22 +40,10 @@
             <div class="header-top">
                 <div class="auto-container">
                     <div class="top-inner">
-                        <div class="left-column">
-                            <ul class="info clearfix">
-                                <li><i class="icon-1"></i><a href="mailto:<?= site_esc($site_email); ?>"><?= site_esc($site_email); ?></a></li>
-                                <li><i class="icon-2"></i><?= site_esc($site_header_hours); ?></li>
-                            </ul>
-                            <ul class="social-links clearfix">
-                                <?php foreach ($site_social_links as $social_link) : ?>
-                                    <li><a href="<?= site_esc($social_link['url']); ?>"><i class="<?= site_esc($social_link['icon']); ?>"></i></a></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </div>
-                        <div class="right-column">
-                            <div class="btn-box">
+                        
+                         <div class="btn-box d-flex justify-content-center w-100">
                                 <a href="application.php">Schedule a Tour</a>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
