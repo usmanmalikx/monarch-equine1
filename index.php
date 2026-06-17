@@ -309,20 +309,23 @@ $gallery_images = array_values(array_filter(
                     <h2>Get in Touch</h2>
                 </div>
                 <div class="form-inner">
-                    <form action="index.html" method="post">
+                    <form action='https://forms.zohopublic.com/rsviprealestatemarketing1/form/Monarch/formperma/BHGCd_VHdy2KLRnPgW3NQZxG2fEdJGUbBR0yTDXfGiU/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                        <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                        <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                        <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
                         <div class="row clearfix">
                             <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="name" placeholder="Full name" required="">
+                                <input type="text" name="SingleLine" placeholder="Full name" required="">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="email" name="email" placeholder="Email address" required="">
+                                <input type="email" name="Email" placeholder="Email address" required="">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="phone" placeholder="Phone number" required="">
+                                <input type="text" name="PhoneNumber_countrycode" placeholder="Phone number" required="">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                 <div class="select-box">
-                                    <select class="wide">
+                                    <select class="wide" name="SingleLine1">
                                        <option data-display="Occasion">Occasion</option>
                                        <option value="Wedding">Wedding</option>
                                        <option value="Birthday">Birthday</option>
@@ -334,21 +337,21 @@ $gallery_images = array_values(array_filter(
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                 <div class="select-box">
-                                    <select class="wide">
+                                    <select class="wide" name="SingleLine2">
                                        <option data-display="Number of persons">Number of guests</option>
-                                       <option value="'Less than 50">Less than 50</option>
+                                       <option value="Less than 50">Less than 50</option>
                                        <option value="50-100">50-100</option>
                                        <option value="100-200">100-200</option>
-                                       <option value="200+'">200+'</option>
+                                       <option value="200+">200+</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                 <div class="icon"><i class="icon-13"></i></div>
-                                <input type="text" name="date" placeholder="Booking date" id="datepicker">
+                                <input type="text" name="SingleLine3" placeholder="Booking date" id="datepicker">
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <textarea name="message" placeholder="Comments/Questions"></textarea>
+                                <textarea name="SingleLine4" placeholder="Comments/Questions"></textarea>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn centred">
                                 <button type="submit" class="theme-btn-one">Submit</button>
