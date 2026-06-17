@@ -64,45 +64,54 @@
                     // Define the questions and their types here
                     $questions = [
                         [
-                            'id' => 'subject', 
-                            'question' => 'What type of event are you planning?',
+                            'id' => 'SingleLine1', 
+                            'question' => 'What is the occasion of your event?',
                             'type' => 'select',
                             'options' => ['Wedding', 'Birthday', 'Quinceañera', 'Corporate', 'Other']
                         ],
                         [
-                            'id' => 'guest_count',
+                            'id' => 'SingleLine2',
                             'question' => 'Estimated number of guests?',
                             'type' => 'radio',
                             'options' => ['Less than 50', '50-100', '100-200', '200+']
                         ],
                         [
-                            'id' => 'event_date',
+                            'id' => 'SingleLine3',
                             'question' => 'Preferred Event Date?',
                             'type' => 'text',
                             'placeholder' => 'e.g., Spring 2027 or Specific Date'
                         ],
                         [
-                            'id' => 'username', 
+                            'id' => 'SingleLine', 
                             'question' => 'Your Full Name',
                             'type' => 'text',
                             'placeholder' => 'John Doe'
                         ],
                         [
-                            'id' => 'email', 
+                            'id' => 'Email', 
                             'question' => 'Your Email Address',
                             'type' => 'email',
                             'placeholder' => 'john@example.com'
                         ],
                         [
-                            'id' => 'phone',
+                            'id' => 'PhoneNumber_countrycode',
                             'question' => 'Your Phone Number',
                             'type' => 'text',
                             'placeholder' => '(555) 555-5555'
+                        ],
+                        [
+                            'id' => 'SingleLine4',
+                            'question' => 'Comments/Questions',
+                            'type' => 'text',
+                            'placeholder' => 'Any additional comments or questions?'
                         ]
                     ];
                     ?>
                     
-                    <form id="tour-form" method="post" action="sendemail.php">
+                    <form id="tour-form" method="POST" action="https://forms.zohopublic.com/rsviprealestatemarketing1/form/Monarch/formperma/BHGCd_VHdy2KLRnPgW3NQZxG2fEdJGUbBR0yTDXfGiU/htmlRecords/submit" accept-charset="UTF-8" enctype="multipart/form-data">
+                        <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                        <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                        <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
                         <div class="progress-text mb_30" style="color: var(--brand-color); font-weight: 500; font-size: 16px;">
                             Step <span id="current-step-display">1</span> of <?= count($questions) ?>
                         </div>
@@ -198,7 +207,23 @@
 
             document.querySelectorAll('.next-step').forEach(button => {
                 button.addEventListener('click', () => {
-                    if(currentStep < steps.length - 1) showStep(++currentStep);
+                    let isValid = true;
+                    const currentInputs = steps[currentStep].querySelectorAll('input, select, textarea');
+                    
+                    for (let input of currentInputs) {
+                        if (!input.checkValidity()) {
+                            isValid = false;
+                            // If the field is hidden by a custom plugin like nice-select, show a manual alert
+                            if (input.offsetWidth === 0 && input.offsetHeight === 0) {
+                                alert("Please fill out all required fields on this step.");
+                            } else if (typeof input.reportValidity === 'function') {
+                                input.reportValidity(); // Show native HTML5 validation tooltip
+                            }
+                            break;
+                        }
+                    }
+                    
+                    if(isValid && currentStep < steps.length - 1) showStep(++currentStep);
                 });
             });
 
