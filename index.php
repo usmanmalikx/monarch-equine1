@@ -54,7 +54,7 @@
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
                             <h2 class="p_relative d_block">The Perfect Setting for Life's Most Cherished Moments</h2>
-                            <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
+                            <p class="p_relative d_block">Where love, joy, and connection come together in a setting designed to last a lifetime.</p>
                             <div class="btn-box">
                                 <a href="application.php" class="theme-btn-one">Schedule a Tour</a>
                             </div>
@@ -66,7 +66,7 @@
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
                             <h2 class="p_relative d_block">The Perfect Setting for Life's Most Cherished Moments</h2>
-                            <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
+                            <p class="p_relative d_block">From intimate gatherings to grand celebrations, we're honored to host your most cherished moments.</p>
                             <div class="btn-box">
                                 <a href="application.php" class="theme-btn-one">Schedule a Tour</a>
                             </div>
@@ -78,7 +78,7 @@
                     <div class="auto-container">
                         <div class="content-box p_relative d_block z_5">
                             <h2 class="p_relative d_block">Family-Owned. Elegantly Designed. Unforgettable.</h2>
-                            <p class="p_relative d_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />Turpis ridiculus tellus.</p>
+                            <p class="p_relative d_block">A family-owned venue crafted with love — for weddings, birthdays, and every milestone in between.</p>
                             <div class="btn-box">
                                 <a href="application.php" class="theme-btn-one">Schedule a Tour</a>
                             </div>
@@ -259,18 +259,18 @@ $gallery_images = array_values(array_filter(
                     $news_items = [
                         ['title' => '5 Things to Ask Before Booking an Event Space', 
                         'link' => 'blogs/1-post.php', 
-                        'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
+                        'desc' => 'Booking a venue is one of the biggest decisions in planning any celebration. Before you sign a contract, here are five questions every host should ask.', 
                         'image' => 'images/blog1.jpg'],
 
                         ['title' => 'Why a Family-Owned Venue Makes Your Day More Personal', 
                         'link' => 'blogs/2-post.php', 
-                        'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
+                        'desc' => 'When you book a venue run by a corporation, you are often just another reservation on a calendar...', 
                         'image' => 'images/blog2.jpg'],
 
                         ['title' => 'How to Choose the Perfect Venue for Your Quinceañera', 
                         'link' => 'blogs/3-post.php', 
-                        'desc' => 'In ornare pellentesque sed elementum sed ac adipiscing suscipit.', 
-                        'image' => 'images/blog2.jpg']
+                        'desc' => 'A quinceañera is one of the most important celebrations in a young womans life. Choosing the right venue sets the tone for the entire event. Here is what to consider.', 
+                        'image' => 'images/blog3.jpg']
                     ];
                     foreach ($news_items as $index => $news): 
                         $delay = $index * 300;

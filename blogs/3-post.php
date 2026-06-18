@@ -64,13 +64,19 @@
                             <div class="news-block-one">
                                 <div class="inner-box">
                                     <div class="lower-content">
-                                        <h2>A Sample Blog Post Title</h2>
                                         <div class="text mt_20">
-                                            <p>This is the main body of the blog post. You can replace this text with your actual blog content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat pellentesque blandit sodales arcu. Auctor gravida vel et tempus. Malesuada erat dolor magna luctus congue leo tellus mattis. Volutpat neque, erat nis donec sed urna aliquet.</p>
-                                            <br>
-                                            <h3>A Subheading for Your Post</h3>
-                                            <p>Maecenas mattis facilisi erat odio at. Quisque nullam nunc tincidunt ante. Etiam eget augue velit ultricies amet. In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
-                                        </div>
+<p>A quinceañera is one of the most important celebrations in a young woman's life. Choosing the right venue sets the tone for the entire event. Here's what to consider.</p>
+<h3>Think About Capacity and Layout</h3>
+<p>Quinceañeras often include a court of honor, a dance floor for the choreographed waltz, and space for family and friends. Make sure the venue comfortably fits your guest list and traditions.</p>
+<h3>Consider the Aesthetic</h3>
+<p>From elegant and romantic to modern and vibrant, the venue should match the quinceañera's vision. Look for a space with a beautiful backdrop that won't need heavy decoration to feel special.</p>
+<h3>Ask About Cultural Traditions</h3>
+<p>Many venues are unfamiliar with quinceañera customs like the changing of shoes, the last doll, or the father-daughter dance. Choose a venue experienced in hosting these celebrations so the flow feels natural.</p>
+<h3>Check What's Included</h3>
+<p>Tables, chairs, lighting, and a dedicated area for the court of honor can add up quickly if not included. Ask for a clear breakdown of what comes with your booking.</p>
+<h3>Visit in Person</h3>
+<p>Photos only tell part of the story. Walking through the space helps you picture the celebration and ask questions in real time.</p>
+<p>At Monarch Gardens, we're proud to be a family-owned venue that understands the heart behind a quinceañera celebration — and we're honored to help bring that vision to life.</p>                                        </div>
                                     </div>
                                 </div>
                             </div>

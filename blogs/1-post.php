@@ -64,13 +64,20 @@
                             <div class="news-block-one">
                                 <div class="inner-box">
                                     <div class="lower-content">
-                                        <h2>A Sample Blog Post Title</h2>
                                         <div class="text mt_20">
-                                            <p>This is the main body of the blog post. You can replace this text with your actual blog content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat pellentesque blandit sodales arcu. Auctor gravida vel et tempus. Malesuada erat dolor magna luctus congue leo tellus mattis. Volutpat neque, erat nis donec sed urna aliquet.</p>
-                                            <br>
-                                            <h3>A Subheading for Your Post</h3>
-                                            <p>Maecenas mattis facilisi erat odio at. Quisque nullam nunc tincidunt ante. Etiam eget augue velit ultricies amet. In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
-                                        </div>
+
+<p>Booking a venue is one of the biggest decisions in planning any celebration. Before you sign a contract, here are five questions every host should ask.</p>
+<h3>1. What's Included in the Price?</h3>
+<p>Some venues charge separately for tables, chairs, linens, and setup. Ask for a full breakdown so there are no surprises later.</p>
+<h3>2. Is There a Backup for Outdoor Spaces?</h3>
+<p>If your event includes an outdoor area, find out what happens in case of bad weather. A good venue will have a covered or indoor alternative ready.</p>
+<h3>3. How Much Time Do We Get for Setup and Breakdown?</h3>
+<p>Vendors, decorators, and photographers all need time to prepare. Make sure your rental window includes enough time before and after the event itself.</p>
+<h3>4. Are There Restrictions on Vendors or Decor?</h3>
+<p>Some venues require you to use approved vendors or limit certain types of decorations. Confirm this early so it doesn't conflict with your vision.</p>
+<h3>5. What's the Cancellation and Rescheduling Policy?</h3>
+<p>Life happens. Know exactly what your options are if dates need to change, and what costs may be involved.</p>
+<p>Asking the right questions upfront helps you choose a venue that truly fits your celebration — and gives you peace of mind every step of the way.</p>                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -87,19 +87,22 @@
                     <div class="col-lg-8 col-md-12 col-sm-12 form-column">
                         <div class="form-inner centred">
                             <h2>Get In Touch</h2>
-                            <form method="post" action="sendemail.php" id="contact-form"> 
+                            <form action="https://forms.zohopublic.com/rsviprealestatemarketing1/form/Monarch/formperma/BHGCd_VHdy2KLRnPgW3NQZxG2fEdJGUbBR0yTDXfGiU/htmlRecords/submit" name="form" id="contact-form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data"> 
+                                <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                                <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                                <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
                                 <div class="row clearfix">
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" name="username" placeholder="Your Name" required="">
+                                        <input type="text" name="SingleLine" placeholder="Your Name" required="">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="email" name="email" placeholder="Your email" required="">
+                                        <input type="email" name="Email" placeholder="Your email" required="">
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                        <input type="text" name="phone" required="" placeholder="Phone">
+                                        <input type="text" name="PhoneNumber_countrycode" required="" placeholder="Phone">
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                        <textarea name="message" placeholder="Message"></textarea>
+                                        <textarea name="SingleLine4" placeholder="Message"></textarea>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn mr-0">
                                         <button class="theme-btn-one" type="submit" name="submit-form">Submit Now</button>

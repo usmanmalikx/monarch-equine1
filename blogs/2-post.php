@@ -64,13 +64,17 @@
                             <div class="news-block-one">
                                 <div class="inner-box">
                                     <div class="lower-content">
-                                        <h2>A Sample Blog Post Title</h2>
                                         <div class="text mt_20">
-                                            <p>This is the main body of the blog post. You can replace this text with your actual blog content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat pellentesque blandit sodales arcu. Auctor gravida vel et tempus. Malesuada erat dolor magna luctus congue leo tellus mattis. Volutpat neque, erat nis donec sed urna aliquet.</p>
-                                            <br>
-                                            <h3>A Subheading for Your Post</h3>
-                                            <p>Maecenas mattis facilisi erat odio at. Quisque nullam nunc tincidunt ante. Etiam eget augue velit ultricies amet. In ornare pellentesque sed elementum sed ac adipiscing suscipit.</p>
-                                        </div>
+<p>When you book a venue run by a corporation, you're often just another reservation on a calendar. A family-owned venue is different — and that difference shows in every part of your celebration.</p>
+<h3>You're Treated Like Family, Not a Transaction</h3>
+<p>At a family-owned venue, the people helping you plan are often the same people who built the space from the ground up. That means genuine care, not a sales script.</p>
+<h3>Every Detail Reflects Real Pride of Ownership</h3>
+<p>When a venue is someone's personal dream, it shows. From the landscaping to the lighting, family-owned spaces are maintained with a level of attention that's hard to match.</p>
+<h3>Flexibility That Bigger Venues Can't Offer</h3>
+<p>Without layers of corporate policy, family-owned venues can often accommodate special requests, custom setups, and unique timelines that larger chains simply can't.</p>
+<h3>A Personal Connection That Lasts</h3>
+<p>Many families return to the same venue for multiple milestones — a wedding, then years later, a child's quinceañera or anniversary — because of the relationship that was built the first time around.</p>
+<p>At Monarch Gardens, this isn't just a business model — it's the reason we exist. We're honored to be part of your story, and we treat every event as if it were our own family's celebration.</p>                                        </div>
                                     </div>
                                 </div>
                             </div>
