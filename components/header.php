@@ -1,4 +1,26 @@
 
+<?php if (basename($_SERVER['PHP_SELF']) !== 'application-complete.php'): ?>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '27454617567526085');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=27454617567526085&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+ <?php endif; ?>
+
+
         <!--<div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close">x</div>
@@ -36,17 +58,21 @@
 
         <!-- main header -->
         <header class="main-header">
+            <?php
+            $hide_tour_button_on = ['application.php', 'application-complete.php'];
+            if (!in_array(basename($_SERVER['PHP_SELF']), $hide_tour_button_on)):
+            ?>
             <!-- header-top -->
             <div class="header-top">
                 <div class="auto-container">
                     <div class="top-inner">
-                        
                          <div class="btn-box d-flex justify-content-center w-100">
                                 <a href="application.php">SCHEDULE A TOUR</a>
                             </div>
                     </div>
                 </div>
             </div>
+            <?php endif; ?>
             <!-- header-lower -->
             <div class="header-lower">
                 <div class="auto-container">

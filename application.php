@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>Applicagtion - <?= site_esc($site_name); ?></title>
+<title>Application - <?= site_esc($site_name); ?></title>
 
 <!-- Fav Icon -->
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -46,7 +46,7 @@
 
         <?php include 'components/header.php'; ?>
 
-
+    
 
 
         <!-- about-style-two -->
@@ -79,7 +79,7 @@
                             'id' => 'SingleLine3',
                             'question' => 'Preferred Event Date?',
                             'type' => 'text',
-                            'placeholder' => 'e.g., Spring 2027 or Specific Date'
+                            'placeholder' => 'e.g., 12/15/2026'
                         ],
                         [
                             'id' => 'SingleLine', 
@@ -110,7 +110,7 @@
                     
                     <form id="tour-form" method="POST" action="https://forms.zohopublic.com/rsviprealestatemarketing1/form/Monarch/formperma/BHGCd_VHdy2KLRnPgW3NQZxG2fEdJGUbBR0yTDXfGiU/htmlRecords/submit" accept-charset="UTF-8" enctype="multipart/form-data">
                         <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
-                        <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                        <input type="hidden" name="zf_redirect_url" value="https://monarchgardens.us/application-complete.php"><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
                         <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
                         <div class="progress-text mb_30" style="color: var(--brand-color); font-weight: 500; font-size: 16px;">
                             Step <span id="current-step-display">1</span> of <?= count($questions) ?>
