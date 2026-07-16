@@ -30,8 +30,40 @@
 <link href="assets/css/color.css" rel="stylesheet">
 <link href="assets/css/elpath.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
-
+<link href="assets/css/responsive.css?v=1" rel="stylesheet">
+<style>
+  .carousel-wrapper { width: 100%; }
+  .carousel-track {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel-track:active {
+    cursor: grabbing;
+  }
+  .carousel-item-box {
+    flex: 0 0 auto;
+    /* mobile: show 1.3 images */
+    width: calc((100vw - 20px - 10px) / 1.3);
+  }
+  @media (min-width: 768px) {
+    .carousel-item-box {
+      /* desktop: show 4 images, accounting for 3 gaps of 10px */
+      width: calc((100vw - 20px - 30px) / 4);
+    }
+  }
+  .carousel-item-box img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    pointer-events: none; /* prevent native image drag interfering with our drag */
+  }
+  .carousel-outer { overflow: hidden; }
+</style>
 </head>
 
 
@@ -46,7 +78,35 @@
 
         <?php include 'components/header.php'; ?>
 
-    
+<?php
+$gallery_dir = __DIR__ . '/images/gallery';
+$allowed_ext = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+$gallery_images = array_values(array_filter(
+    scandir($gallery_dir),
+    fn($file) => in_array(strtolower(pathinfo($file, PATHINFO_EXTENSION)), $allowed_ext)
+));
+?>
+ 
+<div class="container-fluid carousel-wrapper">
+  <div class="carousel-outer">
+    <div class="carousel-track" id="carouselTrack">
+      <?php
+      // render the set TWICE so the loop wraps seamlessly
+      for ($copy = 0; $copy < 2; $copy++):
+          foreach ($gallery_images as $image):
+              $src = 'images/gallery/' . site_esc($image);
+              $alt = site_esc(pathinfo($image, PATHINFO_FILENAME));
+      ?>
+      <div class="carousel-item-box"><img src="<?= $src ?>" alt="<?= $alt ?>"></div>
+      <?php
+          endforeach;
+      endfor;
+      ?>
+    </div>
+  </div>
+</div>
+ 
+
 
 
         <!-- about-style-two -->
@@ -56,10 +116,10 @@
                 <div class="shape-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
             </div>
             <div class="auto-container">
-                <div class="sec-title centred mb_40">
+                <div class="sec-title centred mb_20">
                     <h2>Schedule a Tour</h2>
                 </div>
-                <div class="form-inner p_relative d_block mb_60" style="max-width: 700px; margin: 0 auto; background: #fff; padding: 50px; box-shadow: 0px 15px 40px rgba(0,0,0,0.07); border-radius: 10px;">
+                <div class="form-inner p_relative d_block mb_60" style="max-width: 700px; margin: 0 auto; background: #fff; padding: 30px; box-shadow: 0px 15px 40px rgba(0,0,0,0.07); border-radius: 10px;">
                     <?php
                     // Define the questions and their types here
                     $questions = [
@@ -112,9 +172,7 @@
                         <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
                         <input type="hidden" name="zf_redirect_url" value="https://monarchgardens.us/application-complete.php"><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
                         <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
-                        <div class="progress-text mb_30" style="color: var(--brand-color); font-weight: 500; font-size: 16px;">
-                            Step <span id="current-step-display">1</span> of <?= count($questions) ?>
-                        </div>
+                        
                         
                         <?php foreach ($questions as $index => $q): ?>
                             <div class="form-step" id="step-<?= $index ?>" style="<?= $index === 0 ? 'display:block;' : 'display:none;' ?>">
@@ -155,6 +213,9 @@
                                     <?php else: ?>
                                         <button type="submit" class="theme-btn-one" name="submit-form">Submit Application</button>
                                     <?php endif; ?>
+                                </div>
+                                <div class="progress-text mb_30" style="color: var(--brand-color); font-weight: 500; font-size: 16px;margin-top:20px">
+                                    Step <span id="current-step-display">1</span> of <?= count($questions) ?>
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -234,6 +295,74 @@
             });
         });
     </script>
+
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script>
+  const track = document.getElementById('carouselTrack');
+ 
+  let posX = 0;
+  let speed = 0.6;          // px per frame auto-scroll speed
+  let isDragging = false;
+  let startX = 0;
+  let startPosX = 0;
+  let halfWidth = 0;
+ 
+  function measure() {
+    halfWidth = track.scrollWidth / 2; // width of one full set (since duplicated)
+  }
+  measure();
+  window.addEventListener('resize', measure);
+ 
+  function wrap() {
+    if (posX <= -halfWidth) posX += halfWidth;
+    if (posX > 0) posX -= halfWidth;
+  }
+ 
+  function render() {
+    track.style.transform = `translateX(${posX}px)`;
+  }
+ 
+  function tick() {
+    if (!isDragging) {
+      posX -= speed;
+      wrap();
+      render();
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+ 
+  function pointerDown(clientX) {
+    isDragging = true;
+    startX = clientX;
+    startPosX = posX;
+  }
+ 
+  function pointerMove(clientX) {
+    if (!isDragging) return;
+    const dx = clientX - startX;
+    posX = startPosX + dx;
+    wrap();
+    render();
+  }
+ 
+  function pointerUp() {
+    isDragging = false;
+  }
+ 
+  // Mouse events
+  track.addEventListener('mousedown', (e) => pointerDown(e.clientX));
+  window.addEventListener('mousemove', (e) => pointerMove(e.clientX));
+  window.addEventListener('mouseup', pointerUp);
+ 
+  // Touch events
+  track.addEventListener('touchstart', (e) => pointerDown(e.touches[0].clientX), { passive: true });
+  track.addEventListener('touchmove', (e) => pointerMove(e.touches[0].clientX), { passive: true });
+  track.addEventListener('touchend', pointerUp);
+</script>
 
 </body><!-- End of .page_wrapper -->
 </html>
