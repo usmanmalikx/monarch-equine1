@@ -30,7 +30,7 @@
 <link href="assets/css/color.css" rel="stylesheet">
 <link href="assets/css/elpath.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/responsive.css?v=1" rel="stylesheet">
+<link href="assets/css/responsive.css?v=10" rel="stylesheet">
 <style>
   .carousel-wrapper { width: 100%; }
   .carousel-track {
